@@ -44,6 +44,17 @@ a:hover {
   opacity: 0.8;
 }
 
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 /* hero */
 .hero {
   background-image: url(img/cafe.jpg);
@@ -122,5 +133,114 @@ body {
 @media (min-width: 768px) {
   .site img {
     width: 2.26rem;
+  }
+}
+
+/* ナビゲーションボタン */
+.nav-button {
+  box-sizing: content-box;
+  padding: 0;
+  outline: none;
+  border: none;
+  background: none;
+  width: 29px;
+  height: 20px;
+  cursor: pointer;
+  color: var(--white);
+}
+
+.nav-button::before,
+.nav-button::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: currentColor;
+  transform: translateY(10px);
+  transition: 0.3s ease-in-out;
+}
+
+.nav-button::before {
+  transform: translateY(-10px);
+  box-shadow: 0 10px currentColor;
+}
+
+@media (max-width: 767px) {
+  /* ナビボタン閉じる */
+  .open .nav-button {
+    z-index: 1000;
+  }
+  .open .nav-button::before {
+    transform: rotate(-45deg);
+    box-shadow: none;
+  }
+  .open .nav-button::after {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  /* ナビゲーションメニュー（開いた状態） */
+  html .open,
+  .open body {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .open .header {
+    position: relative;
+    margin-bottom: -100px;
+  }
+
+  .open .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .open .nav ul {
+    margin-bottom: 10vh;
+    list-style: none;
+  }
+
+  .open .nav li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+/* ナビメニュー（閉じた状態） */
+.nav {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 100%;
+  overflow: hidden;
+  color: transparent;
+  transition: 0.5s ease-in-out;
+}
+
+/* ナビメニューPC */
+@media (max-width: 768px) {
+  .nav-button {
+    display: none;
+  }
+  .nav {
+    position: relative;
+    left: auto;
+    width: auto;
+    height: auto;
+  }
+  .nav .ul {
+    display: flex;
+    list-style: none;
+    color: var(--white);
+  }
+  .nav ul li:not(:first-child) {
+    margin-left: 0.55rem;
   }
 }
