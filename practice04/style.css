@@ -85,6 +85,16 @@ a {
   text-decoration: none;
 }
 
+ul {
+  display: inline-block;
+  /* list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px; */
+}
+
 /* 記事 */
 .content {
   margin: 36px 20px 74px;
@@ -167,5 +177,43 @@ a {
     margin-top: 60px;
     padding: 10px 75px;
     font-size: 18px;
+  }
+}
+
+/* ヘッダー&フッター */
+.header,
+.footer {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header {
+  margin-top: 20px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+@media (min-width: 768px) {
+  .header,
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1088px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header .inner02,
+  .footer .inner02 {
+    text-align: right;
+  }
+  .header {
+    margin-top: 43px;
+    margin-bottom: 44px;
   }
 }
