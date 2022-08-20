@@ -382,3 +382,97 @@ ul {
     text-align: left;
   }
 }
+
+/* 人気のシステム */
+.systems {
+  margin-bottom: 74px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.systems h2 {
+  margin-top: 18px;
+  margin-bottom: 66px;
+  font-weight: 900;
+}
+
+.sys img {
+  width: 82px;
+  border: solid 8px #7fa9aa;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.sys .subtitle {
+  margin-top: 31px;
+  margin-bottom: 0;
+  color: #888888;
+  font-weight: normal;
+}
+.sys .h3 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.sys p {
+  margin-top: 20px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.sys:not(:last-child) {
+  margin-bottom: 54px;
+}
+
+@media (min-width: 768px) {
+  .systems {
+    max-width: 1088px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 110px;
+  }
+  .systems h2 {
+    margin-bottom: 72px;
+  }
+  .sys {
+    display: flex;
+    align-items: center;
+  }
+  .sys figure {
+    flex: 0 0 307px;
+  }
+  .sys img {
+    width: 100%;
+  }
+  .sys .text {
+    margin-left: 40px;
+    margin-right: 12%;
+    text-align: left;
+  }
+  .sys .subtitle {
+    margin-top: 0;
+    font-size: 14px;
+  }
+  .sys h3 {
+    margin-top: 18px;
+    font-size: 24px;
+  }
+  .sys p {
+    margin-top: 46px;
+    font-size: 16px;
+  }
+
+  .sys:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .sys:nth-child(even) .text {
+    margin-right: 40px;
+    margin-left: 12%;
+  }
+  .sys:not(:last-child) {
+    margin-bottom: 47px;
+  }
+}
