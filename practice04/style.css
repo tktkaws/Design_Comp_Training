@@ -357,3 +357,28 @@ ul {
     margin-top: 43px;
   }
 }
+
+/* メッセージトップ */
+.msgtop {
+  margin-bottom: 74px;
+  padding: 110px 20px;
+  background-image: url(img/plan.jpg);
+}
+
+@media (min-width: 768px) {
+  .msgtop {
+    padding-right: 56px;
+    max-width: 1088px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 110px;
+    box-sizing: border-box;
+  }
+  .msgtop h2,
+  .msgtop p {
+    max-width: 515px;
+    margin-right: 0;
+    margin-left: auto;
+    text-align: left;
+  }
+}
