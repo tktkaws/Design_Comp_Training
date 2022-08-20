@@ -139,6 +139,8 @@ ul {
 .msg {
   padding-top: 92px;
   padding-bottom: 92px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-image: url(img/wall.jpg);
   background-size: cover;
   background-position: center;
@@ -150,10 +152,22 @@ ul {
   margin: 0;
   font-size: 24px;
 }
+.msg p {
+  max-width: 32.2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 18px;
+  margin-bottom: 0;
+  font-size: 12px;
+  text-align: left;
+}
 
 @media (min-width: 768px) {
   .msg h2 {
     font-size: 36px;
+  }
+  .msg p {
+    font-size: 16px;
   }
 }
 
