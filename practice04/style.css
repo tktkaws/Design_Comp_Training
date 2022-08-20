@@ -124,3 +124,48 @@ a {
     height: 393px;
   }
 }
+
+/* メッセージ（基本） */
+.msg {
+  padding-top: 92px;
+  padding-bottom: 92px;
+  background-image: url(img/wall.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.msg h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .msg h2 {
+    font-size: 36px;
+  }
+}
+
+/* ボタン基本 */
+.btn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 10px 40px;
+  border-radius: 4px;
+  background-color: #f1a816;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #ea8c06;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    margin-top: 60px;
+    padding: 10px 75px;
+    font-size: 18px;
+  }
+}
