@@ -30,3 +30,124 @@ img {
   height: auto;
   vertical-align: bottom;
 }
+
+/* 基本SR用テキスト */
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* ページグリッド */
+.pageGrid {
+  display: grid;
+  grid-template-columns: 72px auto 72px;
+  grid-template-rows: 72px auto auto;
+}
+
+/* ナビゲーションボタン */
+.nav-button {
+  grid-column: 3;
+  grid-row: 1;
+  padding: 0;
+  outline: none;
+  border: none;
+  background-color: #98a718;
+  cursor: pointer;
+}
+/* ナビゲーションボタン 白線*/
+.nav-button {
+  display: grid;
+  place-content: center;
+}
+.nav-button::before,
+.nav-button::after {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 32px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.nav-button::before {
+  transform: translateY(-5px);
+}
+
+.nav-button::after {
+  transform: translateY(5px);
+}
+
+/* SNSメニュー */
+.sns {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  align-self: start;
+  margin-top: 187px;
+  margin-right: 10px;
+  display: grid;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .sns {
+    justify-self: center;
+    margin-right: 0;
+  }
+}
+/* 縦書きテキスト */
+.decor {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  align-self: start;
+  margin-top: 257px;
+  margin-left: 10px;
+  color: #aaaaaa;
+  font-size: 20px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+@media (min-width: 768px) {
+  .decor {
+    justify-self: center;
+    margin-left: 0;
+  }
+}
+
+/* 丸付きライン */
+@media (min-width: 768px) {
+  .pageGrid::before,
+  .pageGrid::after {
+    content: "";
+    display: block;
+    background-color: #98a718;
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+    margin-top: 660px;
+  }
+
+  .pageGrid::before {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+  .pageGrid::after {
+    width: 1px;
+    min-height: 200px;
+  }
+}
+/* フッター */
+.footer {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  background-color: #000000;
+  color: #ffffff;
+}
