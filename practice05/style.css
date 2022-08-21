@@ -62,6 +62,15 @@ img {
   grid-column: 2;
 }
 
+@media (min-width: 768px) {
+  .partsGrid {
+    grid-template-columns: minmax(72px, 1fr) minmax(auto, 1074px) minmax(
+        72px,
+        1fr
+      );
+  }
+}
+
 /* ナビゲーションボタン */
 .nav-button {
   grid-column: 3;
