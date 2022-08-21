@@ -474,5 +474,12 @@ ul {
   }
   .sys:not(:last-child) {
     margin-bottom: 47px;
+    max-resolution: ;
+    margin-top: ;
   }
+}
+
+/* IE対応 */
+img {
+  font-family: "object-fit: cover";
 }
