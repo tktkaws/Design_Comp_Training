@@ -50,6 +50,18 @@ img {
   grid-template-rows: 72px auto auto;
 }
 
+/* パーツグリッド */
+.partsGrid {
+  display: grid;
+  grid-template-columns: 20px auto 20px;
+}
+
+.partsGrid > *,
+.partsGrid::before,
+.partsGrid::after {
+  grid-column: 2;
+}
+
 /* ナビゲーションボタン */
 .nav-button {
   grid-column: 3;
@@ -150,4 +162,36 @@ img {
   grid-row: 3;
   background-color: #000000;
   color: #ffffff;
+  padding: 81px 0 86px;
+}
+
+.footer > * {
+  grid-row: 1;
+}
+
+.footer .site {
+  margin-bottom: 33px;
+  font-size: 37px;
+  font-weight: bold;
+}
+.footer .address {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.footer .chat {
+  justify-self: end;
+  margin-top: -100px;
+  color: #98a718;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.footer .chat img {
+  padding-bottom: 7px;
+}
+@media (min-width: 768px) {
+  .footer .chat {
+    margin-top: 0;
+  }
 }
