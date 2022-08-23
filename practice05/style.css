@@ -534,3 +534,34 @@ main {
   background-color: #98a718;
   opacity: 60%;
 }
+
+@media (min-width: 768px) {
+  .msg {
+    padding: 150px 0;
+  }
+  .msg figure {
+    grid-row: 1;
+    width: 44%;
+  }
+  .msg .text {
+    grid-row: 1;
+    width: 44%;
+    margin: 83px 0 46px;
+  }
+
+  .msgBlack figure,
+  .msgWhite .text {
+    justify-self: end;
+  }
+  .msg h2 {
+    font-size: 36px;
+  }
+  .msg img {
+    height: 100%;
+  }
+  .msgWhite::after {
+    margin-right: -110px;
+    height: 256px;
+    margin-bottom: -151px;
+  }
+}
