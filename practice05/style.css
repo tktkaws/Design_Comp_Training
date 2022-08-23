@@ -86,6 +86,7 @@ img {
   border: none;
   background-color: #98a718;
   cursor: pointer;
+  z-index: 200;
 }
 /* ナビゲーションボタン 白線*/
 .nav-button {
@@ -100,6 +101,7 @@ img {
   width: 32px;
   height: 4px;
   background-color: #ffffff;
+  transition: transform 0.5s;
 }
 
 .nav-button::before {
@@ -108,6 +110,52 @@ img {
 
 .nav-button::after {
   transform: translateY(5px);
+}
+
+.open .nav-button::before {
+  transform: translateY(2px) rotate(45deg);
+}
+.open .nav-button::after {
+  transform: translateY(-2px) rotate(-45deg);
+}
+
+/* ナビゲーションメニュー */
+.nav ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  z-index: 100;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 50px;
+  transform: scale(0, 0);
+  transform-origin: right top;
+  transition: transform 0.5s;
+}
+
+.open .nav ul {
+  transform: scale(1, 1);
+}
+
+.open html,
+.open body {
+  height: 100%;
+  overflow: hidden;
+}
+
+@media (pointer: fine) and (hover: hover) {
+  html {
+    overflow-y: scroll;
+  }
+  .open html,
+  .open body {
+    height: 100vh;
+  }
 }
 
 /* SNSメニュー */
