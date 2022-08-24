@@ -25,6 +25,16 @@ img {
   vertical-align: bottom;
 }
 
+/* パーツグリッド */
+.partsGrid {
+  display: grid;
+  grid-template-columns: minmax(8vw, 1fr) minmax(auto, 1088px) minmax(8vw, 1fr);
+}
+
+.partsGrid > * {
+  grid-column: 2;
+}
+
 /* 12分割グリッド */
 .grid12 {
   display: grid;
@@ -122,5 +132,114 @@ img {
   }
   .list h2 + p {
     font-size: 16px;
+  }
+}
+
+/* 一覧（商品カテゴリー） */
+.list-plant {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+
+.list-plant > .grid12 {
+  position: relative;
+}
+.list-plant > .grid12::before {
+  content: url(img/sun.svg);
+  position: absolute;
+  top: -80px;
+  right: -120px;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .list-plant {
+    padding-bottom: 86px;
+  }
+  .list-plant > .grid12::before {
+    right: 17px;
+  }
+}
+/* 一覧（体験） */
+.list-exp {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #eefbe3;
+}
+/* 一覧（人気商品） */
+.list-item {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.list-item ul p {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .list-item {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .list-item ul p {
+    font-size: 18px;
+  }
+}
+
+/* 一覧（ボーダー） */
+.frame {
+  border: solid 1px #6abeeb;
+  margin: 0 -15px;
+  padding: 40px 15px;
+}
+
+@media (min-width: 768px) {
+  .frame {
+    margin: 0;
+    padding: 60px 0;
+  }
+  .frame h2,
+  .frame h2 + p {
+    grid-column: 2 / span 7;
+  }
+
+  .frame ul {
+    grid-column: 2 / -2;
+  }
+}
+
+/* 一覧（ボーダー） */ /* 12分割グリッド */
+.frame .grid12 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+}
+.frame .grid12 > * {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 768px) {
+  .frame .grid12 {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 16px;
+  }
+}
+
+/* 12分割グリッド：カラム数 */
+.frame .cols-mob2 > * {
+  grid-column: span 2;
+}
+.frame .cols-mob2.cols-pc3 > :first-child {
+  grid-column: span 4;
+}
+@media (min-width: 768px) {
+  .frame .cols-pc2 > * {
+    grid-column: span 6;
+  }
+  .frame .cols-pc3 > * {
+    grid-column: span 4;
+  }
+  .frame .cols-pc4 > * {
+    grid-column: span 3;
   }
 }
