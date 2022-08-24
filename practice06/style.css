@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-/* font-family: "Noto Sans JP", sans-serif; */
-
 /* 基本 */
 
 body {
@@ -25,4 +23,51 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: bottom;
+}
+
+/* 12分割グリッド */
+.grid12 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+}
+.grid12 > * {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 768px) {
+  .grid12 {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 16px;
+  }
+}
+
+/* 一覧 */
+.list > .grid12 {
+  row-gap: 32px;
+}
+
+.list h2 {
+  color: #444444;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.list h2 + p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+  .list h2,
+  .list h2 + p {
+    grid-column: span 8;
+  }
+  .list h2 {
+    font-size: 32px;
+  }
+  .list h2 + p {
+    font-size: 16px;
+  }
 }
