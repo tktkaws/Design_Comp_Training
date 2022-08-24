@@ -408,3 +408,133 @@ img {
 .custom-shape-divider-bottom-1661327240 .shape-fill {
   fill: #ffffff;
 }
+
+/* ヘッダー：コンテンツページ */
+.content .header-nav ul {
+  color: #555555;
+}
+.content .header-nav .cart {
+  color: #555555;
+}
+
+/* 商品情報 */
+.item.partsGrid {
+  row-gap: 44px;
+  padding-top: 20px;
+  padding-bottom: 64px;
+}
+.item.partsGrid + .list-item {
+  padding-top: 0;
+}
+
+.item-photo {
+  grid-column: 1/-1;
+}
+
+@media (min-width: 768px) {
+  .item.partsGrid {
+    row-gap: 80px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
+  .item-photo {
+    grid-column: 2;
+  }
+}
+
+/* 商品情報12分割グリッド */
+.item .grid12 {
+  row-gap: 44px;
+}
+@media (min-width: 768px) {
+  .item-body {
+    grid-column: span 6;
+  }
+  .item-order {
+    grid-column: span 5 / -1;
+  }
+}
+
+/* 商品情報：本文 */
+.item-body h1 {
+  margin-bottom: 32px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.item-body h1 + p {
+  margin-bottom: 44px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.item-body ul {
+  display: grid;
+  row-gap: 23px;
+}
+
+.item-body ul h3 {
+  margin-bottom: 7px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.item-body ul p {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .item-body h1 {
+    margin-bottom: 38px;
+    font-size: 44px;
+  }
+
+  .item-body h1 + p {
+    margin-bottom: 64px;
+    font-size: 16px;
+  }
+  .item-body ul h3 {
+    font-size: 18px;
+  }
+  .item-bodyul p {
+    font-size: 16px;
+  }
+}
+
+/* 商品情報：装飾画像 */
+.item {
+  overflow: hidden;
+}
+
+.item-body {
+  position: relative;
+}
+
+.item-body::before {
+  content: url(img/sun.svg);
+  position: absolute;
+  top: -85px;
+  right: -133px;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .item-body::before {
+    top: -209px;
+    left: -193px;
+    right: auto;
+  }
+}
+
+/* リストアイコン */
+.item-body li {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+}
+.item-body ul .fas {
+  grid-row: span 2;
+  color: #6abeeb;
+  font-size: 30px;
+}
