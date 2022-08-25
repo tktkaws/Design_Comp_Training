@@ -61,6 +61,18 @@
         </h1>
         <p>いつでも思い出せるキャンディの味</p>
       </div>
+      <aside class="switch">
+        <div class="onoffswitch">
+          <input
+            type="checkbox"
+            name="onoffswitch"
+            class="onoffswitch-checkbox"
+            id="myonoffswitch"
+            tabindex="0"
+          />
+          <label class="onoffswitch-label" for="myonoffswitch"></label>
+        </div>
+      </aside>
       <div class="msg">
         <h2>はじまりは１つのキャンディでした</h2>
         <p>
@@ -129,17 +141,40 @@
 
     <script>
       var osDark = window.matchMedia("(prefers-color-scheme: dark)");
+      var mySwitch = document.getElementById("myonoffswitch");
 
       function darkModeOn() {
         document.documentElement.classList.add("darkmode");
+        mySwitch.checked = true;
       }
       function darkModeOff() {
         document.documentElement.classList.remove("darkmode");
+        mySwitch.checked - false;
       }
 
-      if (osDark.matches) {
+      //   ロード時の状況に応じて切り替え
+      if (sessionStorage.getItem("darkMode") === "on") {
+        darkModeOn();
+      } else if (sessionStorage.getItem("darkMode") === "off") {
+        darkModeOff();
+      } else if (osDark.matches) {
         darkModeOn();
       }
+
+      //   if (osDark.matches) {
+      //     darkModeOn();
+      //   }
+
+      // スイッチの操作に応じて切り替え
+      mySwitch.addEventListener("change", function () {
+        if (mySwitch.checked) {
+          darkModeOn();
+          sessionStorage.setItem("darkMode", "on");
+        } else {
+          darkModeOff();
+          sessionStorage.setItem("darkMode", "off");
+        }
+      });
 
       osDark.addListener(function () {
         if (osDark.matches) {
