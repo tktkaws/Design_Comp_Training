@@ -1,0 +1,68 @@
+@charset "UTF-8"
+
+/* 変数 */
+
+:root {
+  --main: #f26a74;
+  --sub: #ffa5a5;
+  --dark: #e13845;
+
+  --text: #444444;
+  --textwhite: #ffffff;
+  --back: #ffffff;
+  --backtrans: rgba(255, 255, 255, 0.6);
+  --backcheck: #fff7d2;
+  --main2sub: var(--main);
+  --main2dark: var(--main);
+  --change: 0.5s ease-in-out;
+}
+
+:root.darkmode {
+  --text: #ebebeb;
+  --textwhite: #ebebeb;
+  --back: #231802;
+  --backtrans: rgba(35, 24, 2, 0.7);
+  --backcheck: #372a0a;
+  --main2sub: var(--sub);
+  --main2dark: var(--dark);
+}
+
+/* 基本設定 */
+body {
+  font-family: sans-serif;
+  background-color: var(--back);
+  color: var(--text);
+  text-align: center;
+  transition: var(--change);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}

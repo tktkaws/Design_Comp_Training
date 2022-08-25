@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>からふる</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="site">
+        <h1><img src="img/colorful.svg" alt="からふる" /></h1>
+        <p>いつでも思い出せるキャンディの味</p>
+      </div>
+      <div class="msg">
+        <h2>はじまりは１つのキャンディでした</h2>
+        <p>
+          ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+          ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+          ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+        </p>
+      </div>
+    </header>
+
+    <section class="photos">
+      <h2>
+        色とりどりのキャンディ
+      </h2>
+      <p>
+        ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+        ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+      </p>
+    </section>
+    <footer class="footer">
+      <h2><img src="img/colorful-yoko.svg" alt="からふる" /></h2>
+      <p>〒 600-0001 京都府山寺市中央梅3-3-23<br />0001-1234-5678</p>
+    </footer>
+
+    <script>
+      var osDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+      function darkModeOn() {
+        document.documentElement.classList.add("darkmode");
+      }
+      function darkModeOff() {
+        document.documentElement.classList.remove("darkmode");
+      }
+
+      if (osDark.matches) {
+        darkModeOn();
+      }
+
+      osDark.addListener(function () {
+        if (osDark.matches) {
+          darkModeOn();
+        } else {
+          darkModeOff();
+        }
+      });
+    </script>
+  </body>
+</html>
