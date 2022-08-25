@@ -66,3 +66,26 @@ a {
 a:hover {
   opacity: 0.8;
 }
+
+/* ヘッダー画像 */
+.header {
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url(img/candy.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: var(--change);
+}
+
+.darkmode .header::after {
+  filter: saturate(0.8) brightness(0.8);
+}
