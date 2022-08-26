@@ -1,4 +1,4 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
 /* 変数 */
 
@@ -6,7 +6,6 @@
   --main: #f26a74;
   --sub: #ffa5a5;
   --dark: #e13845;
-
   --text: #444444;
   --textwhite: #ffffff;
   --back: #ffffff;
@@ -150,4 +149,91 @@ a:hover {
 
 .onoffswitch-label {
   -webkit-tap-highlight-color: transparent;
+}
+
+/* 飾り罫 */
+.header {
+  padding: 25px 25px 0;
+}
+
+.site {
+  border: solid 1px currentColor;
+  border-image: url(img/border.svg) 68 / 40px / 20px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 44px 44px 0;
+  }
+  .site {
+    border-image-width: 68px;
+    border-image-outset: 34px;
+  }
+}
+
+/* 飾り罫の中身 */
+.site h1 {
+  margin: 72px 0 153px;
+}
+
+.site p {
+  color: var(--textwhite);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .site h1 {
+    margin: 120px 0;
+  }
+  .site p {
+    font-size: 22px;
+  }
+}
+
+/* スイッチの表示位置 */
+.site {
+  position: relative;
+}
+
+.switch {
+  position: absolute;
+  top: 385px;
+  left: calc(50% - 46px);
+}
+
+.onoffswitch {
+  position: relative;
+  left: 68px;
+  top: -8px;
+}
+.onofftext {
+  transform: rotate(-18deg);
+}
+
+@media (min-width: 768px) {
+  .switch {
+    top: 366px;
+    left: calc(50% + 81px);
+  }
+}
+
+.onofftext {
+  width: 137px;
+  line-height: 51px;
+  text-align: center;
+  border: solid 1px var(--sub);
+  background-color: var(--backtrans);
+  color: var(--main2sub);
+  font-size: 21px;
+  font-family: Georgia, serif;
+  transition: var(--change);
+}
+
+.onofftext::before {
+  content: "Light ";
+}
+
+.darkmode .onofftext::before {
+  content: "Dark ";
 }
