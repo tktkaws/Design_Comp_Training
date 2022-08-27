@@ -68,9 +68,34 @@ a:hover {
   opacity: 0.8;
 }
 
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 /* ヘッダー画像 */
 .header {
   position: relative;
+}
+
+/* ヘッダー画像のフェードイン */
+.header::after {
+  animation: fade 3s ease-in-out 2s backwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .header::after {
@@ -335,6 +360,42 @@ a:hover {
     width: calc((100% - (20px * 2)) / 3);
     margin-bottom: 20px;
   }
+}
+
+/* フッター */
+.footer {
+  padding-bottom: 110px;
+}
+.footer h2 {
+  margin: 20px 0 33px;
+}
+.footer p {
+  font-size: 12px;
+  line-height: 2;
+}
+
+@media (min-width: 768px) {
+  .footer h2 {
+    margin-bottom: 46px;
+  }
+  .footer p {
+    font-size: 18px;
+  }
+}
+
+/* SNSメニュー */
+.footer ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 44px;
+}
+
+.footer ul li:not(:last-child) {
+  margin-right: 20px;
+}
+.footer ul i {
+  color: var(--main2sub);
+  font-size: 40px;
 }
 
 /* ダークモード */

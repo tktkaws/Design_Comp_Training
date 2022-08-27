@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>からふる</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" id="sitecss" />
     <link rel="icon" href="img/favicon.png" type="image/png" />
   </head>
   <body>
@@ -151,19 +155,51 @@
         </svg>
       </h2>
       <p>〒 600-0001 京都府山寺市中央梅3-3-23<br />0001-1234-5678</p>
+      <ul>
+        <li>
+          <a href="">
+            <i class="ri-twitter-fill"></i>
+            <span class="sr-only">Twitter</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="ri-facebook-circle-fill"></i>
+            <span class="sr-only">Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="ri-instagram-line"></i>
+            <span class="sr-only">Instagram</span>
+          </a>
+        </li>
+      </ul>
     </footer>
 
     <script>
       var osDark = window.matchMedia("(prefers-color-scheme: dark)");
       var mySwitch = document.getElementById("myonoffswitch");
 
+      if (!document.currentScript) {
+        var ie = true;
+        var sitecss = document.getElementById("sitecss");
+      }
+
       function darkModeOn() {
         document.documentElement.classList.add("darkmode");
         mySwitch.checked = true;
+
+        if (ie) {
+          sitecss.href = "ie-style-dark.css";
+        }
       }
       function darkModeOff() {
         document.documentElement.classList.remove("darkmode");
         mySwitch.checked - false;
+      }
+      if (ie) {
+        sitecss.href = "ie-style.css";
       }
 
       //   ロード時の状況に応じて切り替え
@@ -173,6 +209,8 @@
         darkModeOff();
       } else if (osDark.matches) {
         darkModeOn();
+      } else if (ie) {
+        darkModeOff();
       }
 
       //   if (osDark.matches) {
