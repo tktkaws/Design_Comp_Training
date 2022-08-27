@@ -72,9 +72,9 @@ main h2 + p {
 /* テーブル */
 .table {
   width: 100%;
+  min-width: 550px;
   table-layout: fixed;
   border-spacing: 0;
-  margin-top: 28px;
   text-align: center;
 }
 .table th,
@@ -104,6 +104,8 @@ main h2 + p {
 
 .table th:nth-child(2) {
   width: 150px;
+  padding-right: 10px;
+  box-sizing: border-box;
   background-color: #282832;
   color: #ffffff;
   box-shadow: 4px 0 4px rgba(0, 0, 0, 0.2);
@@ -128,4 +130,34 @@ main h2 + p {
 }
 .table tbody tr:nth-child(odd) {
   background: #eeeeee;
+}
+
+@media (max-width: 899px) {
+  .table th,
+  .table td {
+    font-size: 13px;
+  }
+  .table thead span {
+    writing-mode: vertical-rl;
+    height: 48px;
+  }
+  .table th:nth-child(2) {
+    width: 120px;
+  }
+}
+
+/* レスポンシブルテーブル */
+.table-wrapper {
+  overflow: auto;
+  margin-top: 28px;
+}
+.table th:nth-child(1) {
+  -webkit-position: sticky;
+  position: sticky;
+  left: 0;
+}
+.table th:nth-child(2) {
+  -webkit-position: sticky;
+  position: sticky;
+  left: 42px;
 }
