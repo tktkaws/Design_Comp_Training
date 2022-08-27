@@ -3,6 +3,10 @@
 /* 基本 */
 body {
   font-family: "Roboto", sans-serif;
+  background: transparent
+    linear-gradient(180deg, #3a0757 0%, #3a0757 28%, #042230 100%) 0% 0%
+    no-repeat padding-box;
+  color: #ffffff;
 }
 
 body,
@@ -20,4 +24,47 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+/* コンテナ */
+.container {
+  width: 92%;
+  max-width: 1214px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* メインコンテンツ */
+main section {
+  margin: 36px 0;
+  padding: 31px 10px 43px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #621f82;
+}
+
+main h2 {
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+}
+
+main h2 + p {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  main section {
+    padding: 58px 50px 70px;
+  }
+  main h2 {
+    font-size: 32px;
+    text-align: left;
+  }
+  main h2 + p {
+    text-align: left;
+  }
 }
