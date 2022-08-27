@@ -14,6 +14,7 @@
   --main2sub: var(--main);
   --main2dark: var(--main);
   --change: 0.5s ease-in-out;
+  --whiteline: 100px;
 }
 
 :root.darkmode {
@@ -218,6 +219,74 @@ a:hover {
   }
 }
 
+/* 縦のライン */
+.site::after,
+.msg::before,
+.msg::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: var(--whiteline);
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --whiteline: 154px;
+  }
+}
+
+/* テキスト */
+.text {
+  max-width: 378px;
+  margin: auto;
+}
+.text::before {
+  content: url(img/candy.svg);
+  display: block;
+  margin-bottom: 18px;
+}
+
+.text h2 {
+  margin-bottom: 30px;
+  color: var(--main);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.text p {
+  font-size: 12px;
+  line-height: 2;
+  text-align: left;
+}
+
+.msg .text {
+  padding: 42px 25px;
+  border-radius: 30px;
+  background-color: var(--backtrans);
+  transition: var(--change);
+}
+
+@media (min-width: 768px) {
+  .text {
+    max-width: 567px;
+    margin: auto;
+  }
+  .text h2 {
+    margin-bottom: 46px;
+    font-size: 25px;
+  }
+  .text p {
+    font-size: 18px;
+  }
+  .msg .text {
+    padding: 42px 110px;
+    border-radius: 190px;
+  }
+}
+
+/* ダークモード */
 .onofftext {
   width: 137px;
   line-height: 51px;
