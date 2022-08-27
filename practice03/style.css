@@ -15,6 +15,7 @@
   --main2dark: var(--main);
   --change: 0.5s ease-in-out;
   --whiteline: 100px;
+  --pinkline: 100px;
 }
 
 :root.darkmode {
@@ -231,6 +232,17 @@ a:hover {
   background-color: #ffffff;
 }
 
+.photos::before,
+.photos::after,
+.footer::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: var(--pinkline);
+  margin: 0 auto;
+  background-color: var(--sub);
+}
+
 @media (min-width: 768px) {
   :root {
     --whiteline: 154px;
@@ -283,6 +295,45 @@ a:hover {
   .msg .text {
     padding: 42px 110px;
     border-radius: 190px;
+  }
+}
+
+/* 写真一覧 */
+.photos {
+  padding: 0 25px;
+  background-color: var(--backcheck);
+  background-image: url(img/check.png);
+}
+
+.photos .text {
+  margin-bottom: 36px;
+}
+
+.photos ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 452px;
+  margin: auto;
+  margin-bottom: -15px;
+}
+.photos li {
+  width: calc((100% - 15px) / 2);
+  margin-bottom: 15px;
+}
+
+.darkmode .photos img {
+  filter: saturate(0.8) brightness(0.8);
+}
+@media (min-width: 768px) {
+  .photos ul {
+    min-width: 874px;
+    margin: auto;
+    margin-bottom: -20px;
+  }
+  .photos li {
+    width: calc((100% - (20px * 2)) / 3);
+    margin-bottom: 20px;
   }
 }
 
