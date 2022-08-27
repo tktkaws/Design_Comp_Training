@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* 基本 */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+figure,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
