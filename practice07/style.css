@@ -161,3 +161,140 @@ main h2 + p {
   position: sticky;
   left: 42px;
 }
+
+/* 対戦カード */
+/* .team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #0b5578;
+  font-size: 16px;
+  text-align: center;
+}
+
+.team img {
+  width: 84px;
+  height: 84px;
+  margin-bottom: 8px;
+  padding: 7px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: #0b5578;
+}
+
+.kickoff .date {
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.kickoff .time {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 900;
+}
+.kickoff .timezone {
+  font-size: 10px;
+} */
+
+/* 対戦カード */
+.teams {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.team {
+  flex: 1;
+  align-self: flex-start;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #0b5578;
+  font-size: 16px;
+  text-align: center;
+}
+
+.team img {
+  width: 84px;
+  height: 84px;
+  margin-bottom: 8px;
+  padding: 7px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: #0b5578;
+}
+
+.kickoff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #282832;
+}
+
+.kickoff .date {
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.kickoff .time {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.kickoff .timezone {
+  font-size: 10px;
+}
+
+@media (min-width: 768px) {
+  .teams {
+    margin-top: 23px;
+    background-image: url(img/logo-blue.svg);
+    background-size: 38px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 0 50px;
+  }
+  .team {
+    margin: 0;
+  }
+  .team.home {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  .team.home img {
+    margin: 0 9.3% 0 7.3%x;
+  }
+  .team.away {
+    flex-direction: row;
+    text-align: left;
+  }
+  .team.away img {
+    margin: 0 7.3% 0 9.3%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .team {
+    font-size: 24px;
+    margin: 0;
+  }
+  .team img {
+    width: 169px;
+    height: 169px;
+    padding: 13px;
+  }
+
+  .kickoff .date {
+    font-size: 15px;
+  }
+  .kickoff .time {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  .kickoff .timezone {
+    font-size: 16px;
+  }
+}
