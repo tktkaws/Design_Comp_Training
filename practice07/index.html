@@ -13,6 +13,64 @@
     />
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <siv class="site">
+          <img src="img/logo.svg" alt="" />
+          Football Game
+        </siv>
+        <button
+          class="navbtn"
+          onclick="document.querySelector('html').classList.toggle('open')"
+        >
+          <span class="navbtn-bar"></span>
+          <span class="sr-only">MENU</span>
+        </button>
+        <nav class="nav">
+          <ul class="nav-menu">
+            <li>
+              <a href="#">Next Showdown <span>次の対戦</span></a>
+            </li>
+            <li>
+              <a href="#">Tables & Standings <span>順位表</span></a>
+            </li>
+            <li>
+              <a href="#">Teams <span>チーム</span></a>
+            </li>
+          </ul>
+          <ul class="nav-sns">
+            <li>
+              <a href="#"
+                ><img src="img-sns/logo-twitter.svg" alt="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="img-sns/logo-facebook.svg" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="img-sns/logo-instagram.svg" alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="img-sns/logo-youtube.svg" alt="YouTube"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="img-sns/logo-discord.svg" alt="Discord"
+              /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img-sns/logo-twitch.svg" alt="Twitch" /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <div class="hero">
       <div
         class="hero-placeholder"
@@ -24,6 +82,10 @@
         class="hero-main"
         style="background-image: url('img/hero.jpg');"
       ></div>
+      <!-- <div
+        class="hero-main"
+        style="background-image: url('img/hero-case2.jpg');"
+      ></div> -->
 
       <div class="contents container">
         <figure>
