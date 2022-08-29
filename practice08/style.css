@@ -58,6 +58,12 @@ img {
   vertical-align: bottom;
 }
 
+figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Clamp */
 *,
 *::before,
@@ -133,6 +139,17 @@ section + section {
   margin-block-start: var(--clamp-size);
 }
 
+/* ７列のグリッド */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, var(--size1)) auto repeat(3, var(--size1));
+  row-gap: 44px;
+}
+
+.container > * {
+  grid-column: 2 / -2;
+}
+
 /* ヘッダー ----------------- */
 .header {
   display: flex;
@@ -202,4 +219,96 @@ section + section {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+/* ヒーロー ----------------- */
+.hero {
+  --min-size: 15;
+  --max-size: 0;
+  margin-block-start: clamp(0px, var(--fluid-size), 15px);
+}
+
+.hero .text {
+  display: contents;
+}
+
+.hero .container > * > * {
+  grid-column: 2 / -2;
+}
+
+.hero .heading {
+  grid-row: 1;
+  z-index: 2;
+  text-align: right;
+}
+
+.hero .photo01 {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  height: 588px;
+  --min-size: 39;
+  --max-size: 130;
+  margin-block-start: var(--clamp-size);
+}
+
+.hero .photo02 {
+  grid-column: 3 / -1;
+  height: 180px;
+}
+
+@media (min-width: 768px) {
+  .hero .container {
+    grid-template-columns: 1026fr 378fr;
+    grid-template-rows: auto var(--size4);
+    column-gap: var(--size1-half);
+    row-gap: 0;
+  }
+
+  .hero .text {
+    display: revert;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    z-index: 2;
+    margin-inline-end: var(--size2);
+  }
+
+  .hero .body {
+    width: 21em;
+    margin-block-start: 2em;
+    margin-inline-start: auto;
+  }
+
+  .hero .photo01 {
+    grid-column: 1;
+    grid-row: 1;
+    aspect-ratio: 1026 / 772;
+    height: auto;
+  }
+
+  .hero .photo02 {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    align-self: end;
+    aspect-ratio: 378 / 648;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero .text {
+    display: contents;
+  }
+
+  .hero .heading {
+    grid-column: inherit;
+    grid-row: inherit;
+    margin-inline-end: inherit;
+  }
+
+  .hero .body {
+    grid-column: 1;
+    grid-row: 2;
+    width: 80%;
+    margin-inline-start: var(--size1);
+  }
 }
