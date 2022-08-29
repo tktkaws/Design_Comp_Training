@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
-/* font-family: 'Lora', serif;
-font-family: 'Noto Sans JP', sans-serif; */
+/* font-family: 'Noto Sans JP', sans-serif; */
 
 /* 基本色 */
 :root {
@@ -57,4 +56,79 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: bottom;
+}
+
+/* Clamp */
+*,
+*::before,
+*::after {
+  /* 最小サイズ、最大サイズ、最小画面幅、最大画面幅 */
+  --min-size: 53;
+  --max-size: 146;
+  --min-viewport: 375;
+  --max-viewport: 1440;
+
+  /* a 傾き */
+  --slope: calc(
+    (var(--max-size) - var(--min-size)) /
+      (var(--max-viewport) - var(--min-viewport))
+  );
+  /* b 切片 */
+  --intercept: calc(var(--min-size) - var(--slope) * var(--min-viewport));
+  /* y = ax + b 可変サイズ */
+  --fluid-size: calc(var(--slope) * 100vw + var(--intercept) / 16 * 1rem);
+
+  /* clamp(最小サイズ, 可変サイズ, 最大サイズ) */
+  --clamp-size: clamp(
+    var(--min-size) / 16 * 1rem,
+    var(--fluid-size),
+    var(--max-size) / 16 * 1rem
+  );
+}
+
+/* テキスト（Fluid typography） */
+h1 {
+  font-size: var(--clamp-size);
+  font-family: "Lora", serif;
+  font-weight: 400;
+  background: linear-gradient(92.21deg, #54603f 6.06%, #a2cf4f 95.93%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2,
+.subtitle {
+  --min-size: 26;
+  --max-size: 42;
+  font-size: var(--clamp-size);
+  font-family: "Noto Serif JP", serif;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+p {
+  --min-size: 14;
+  --max-size: 16;
+  font-size: var(--clamp-size);
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.num {
+  font-size: 6.4rem;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  background: linear-gradient(0.96deg, #54603f 0.35%, #a2cf4f 182.75%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* レイアウト ----------------- */
+/* セクションの間隔 */
+section + section {
+  --min-size: 140;
+  --max-size: 288;
+  margin-block-start: var(--clamp-size);
 }
