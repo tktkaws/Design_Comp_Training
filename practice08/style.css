@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/* font-family: 'Lora', serif;
+font-family: 'Noto Sans JP', sans-serif; */
+
+/* 基本色 */
+:root {
+  --primary: #96a199;
+  --secondary: #e9ece8;
+  --accent: #b75865;
+  --text: #54603f;
+  --white: #ffffff;
+}
+
+/* 基本サイズ */
+:root {
+  --size1-half: calc(var(--size1) / 2);
+  --size1: 5vw;
+  --size2: calc(var(--size1) * 2);
+  --size3: calc(var(--size1) * 3);
+  --size4: calc(var(--size1) * 4);
+}
+
+/* 基本設定 */
+body {
+  color: var(--text);
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.9;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
