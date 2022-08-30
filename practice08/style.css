@@ -159,6 +159,14 @@ section + section {
   grid-column: 2 / -2;
 }
 
+/* 縦横中央 */
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ヘッダー ----------------- */
 .header {
   display: flex;
@@ -216,6 +224,34 @@ section + section {
 .open .navbtn {
   color: var(--white);
   z-index: 200;
+}
+
+/* ナビゲーションメニュー */
+.nav {
+  gap: 44px;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: linear-gradient(
+    0.96deg,
+    rgba(84, 96, 63, 0.9) 0.35%,
+    rgba(162, 207, 79, 0.9) 182.75%
+  );
+  color: var(--white);
+  transition: transform 0.5s;
+}
+
+.open .nav {
+  transform: translate(-100%, 0);
+}
+
+.open {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
 }
 
 /* スクリーンリーダー */
@@ -700,4 +736,62 @@ section + section {
     bottom: 4.85%;
     transform: rotate(138deg);
   }
+}
+
+/* CTA ----------------- */
+.cta {
+  gap: 30px;
+  padding-block: 200px;
+}
+
+.cta-btn {
+  --min-size: 20;
+  --max-size: 36;
+  font-size: var(--clamp-size);
+  font-family: "Noto Serif JP", serif;
+  font-weight: 500;
+  display: flex;
+}
+
+.cta-btn::before {
+  content: url(img/bars-left.svg);
+  width: 2em;
+  margin-top: -1em;
+}
+
+.cta-btn::after {
+  content: url(img/bars-right.svg);
+  width: 2em;
+  margin-top: -1em;
+}
+
+.cta-btn a {
+  padding: 1em;
+  border-radius: 2em;
+  color: var(--white);
+  background-color: var(--accent);
+}
+
+/* フッター ----------------- */
+.footer {
+  gap: 44px;
+  padding-block: 100px;
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+/* ロゴ */
+.logo {
+  --min-size: 120;
+  --max-size: 200;
+  width: var(--clamp-size);
+}
+
+/* メニュー */
+.menu {
+  --min-size: 14;
+  --max-size: 18;
+  font-size: var(--clamp-size);
+  display: flex;
+  gap: 2em;
 }
