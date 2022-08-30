@@ -432,6 +432,50 @@ section + section {
   }
 }
 
+/* セクション02（PC版）----------------- */
+@media (min-width: 768px) {
+  .sec02 .container {
+    grid-template-columns: 540fr 684fr;
+    grid-template-rows: repeat(2, auto);
+    gap: var(--size1);
+    margin-inline-start: var(--size1);
+
+    grid-template-areas:
+      "photo01 photo01"
+      "photo02 text";
+  }
+
+  .sec02 .text {
+    display: revert;
+    grid-area: text;
+    margin-inline-end: var(--size1);
+  }
+
+  .sec02 .heading {
+    text-align: left;
+  }
+
+  .sec02 .heading h2 {
+    margin-block: var(--size1-half);
+  }
+
+  .sec02 .body {
+    max-width: 29em;
+  }
+
+  .sec02 .photo01 {
+    grid-area: photo01;
+    margin-inline-start: var(--size2);
+    aspect-ratio: 1224/731;
+    height: auto;
+  }
+
+  .sec02 .photo02 {
+    grid-area: photo02;
+    height: auto;
+  }
+}
+
 /* セクションの装飾 ----------------- */
 .decor {
   position: relative;
@@ -460,6 +504,13 @@ section + section {
   bottom: -5.72%;
 }
 
+.sec02.decor::before {
+  left: 9.87%;
+  right: 0%;
+  top: 34.55%;
+  bottom: -5.81%;
+}
+
 @media (min-width: 768px) {
   .hero.decor::before {
     left: 47.43%;
@@ -473,6 +524,13 @@ section + section {
     right: 15%;
     top: 30.75%;
     bottom: -8.02%;
+  }
+
+  .sec02.decor::before {
+    left: 32.64%;
+    right: 0%;
+    top: -7.29%;
+    bottom: -7.29%;
   }
 }
 
@@ -503,6 +561,12 @@ section + section {
   display: none;
 }
 
+.sec02.decor::after {
+  right: 19.23%;
+  bottom: -14.85%;
+  transform: rotate(-159deg);
+}
+
 @media (min-width: 768px) {
   .hero.decor::after {
     right: 83.6%;
@@ -522,5 +586,11 @@ section + section {
     right: 21.26%;
     bottom: 65.75%;
     transform: rotate(-153deg);
+  }
+
+  .sec02.decor::after {
+    right: 32.29%;
+    bottom: -17.24%;
+    transform: rotate(-139deg);
   }
 }
