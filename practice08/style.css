@@ -476,6 +476,82 @@ section + section {
   }
 }
 
+/* セクション03 ----------------- */
+/* テキスト */
+.sec03 h2 {
+  margin-block-end: 24px;
+}
+
+@media (min-width: 768px) {
+  .sec03 .text {
+    display: grid;
+    grid-template-columns: var(--size2) 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "num heading2"
+      ". body";
+    column-gap: var(--size1-half);
+    align-items: baseline;
+  }
+
+  .sec03 .heading {
+    display: contents;
+  }
+
+  .sec03 .num {
+    grid-area: num;
+  }
+
+  .sec03 h2 {
+    grid-area: heading2;
+    margin-block-end: var(--size1-half);
+  }
+
+  .sec03 .body {
+    grid-area: body;
+    max-width: 34em;
+  }
+}
+
+/* 記事リスト */
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.posts figure {
+  height: 360px;
+}
+
+.posts h3 {
+  --min-size: 16;
+  --max-size: 18;
+  font-size: var(--clamp-size);
+  font-weight: 400;
+  margin-block-start: 12px;
+}
+
+@media (min-width: 1024px) {
+  .posts {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .posts li {
+    flex: 1;
+    max-width: 335px;
+  }
+
+  .posts li:nth-child(2) {
+    margin-block-start: 140px;
+  }
+
+  .posts li:nth-child(3) {
+    margin-block-start: 280px;
+  }
+}
+
 /* セクションの装飾 ----------------- */
 .decor {
   position: relative;
@@ -511,6 +587,13 @@ section + section {
   bottom: -5.81%;
 }
 
+.sec03.decor::before {
+  left: 0%;
+  right: 0%;
+  top: 30.12%;
+  bottom: 13.63%;
+}
+
 @media (min-width: 768px) {
   .hero.decor::before {
     left: 47.43%;
@@ -531,6 +614,15 @@ section + section {
     right: 0%;
     top: -7.29%;
     bottom: -7.29%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sec03.decor::before {
+    left: 0%;
+    right: 0%;
+    top: 33.61%;
+    bottom: 10.37%;
   }
 }
 
@@ -567,6 +659,12 @@ section + section {
   transform: rotate(-159deg);
 }
 
+.sec03.decor::after {
+  right: 64.25%;
+  bottom: -4.81%;
+  transform: rotate(164deg);
+}
+
 @media (min-width: 768px) {
   .hero.decor::after {
     right: 83.6%;
@@ -592,5 +690,14 @@ section + section {
     right: 32.29%;
     bottom: -17.24%;
     transform: rotate(-139deg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .sec03.decor::after {
+    --max-size: 80;
+    right: 65.56%;
+    bottom: 4.85%;
+    transform: rotate(138deg);
   }
 }
