@@ -1,29 +1,8 @@
-@charset "UTF-8";
-h1 {
-  color: blue;
-}
-h1 span {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-h1 span::before, h1 span::after {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 2px;
-  background-color: green;
-}
-h1 span::before {
-  transform: rotate(45deg);
-}
-h1 span::after {
-  transform: rotate(-45deg);
-}
-
 /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+
 /* Reset box-model and set borders */
 /* ============================================ */
+
 *,
 ::before,
 ::after {
@@ -34,11 +13,13 @@ h1 span::after {
 
 /* Document */
 /* ============================================ */
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  * 3. Remove gray overlay on links for iOS.
  */
+
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -47,9 +28,11 @@ html {
 
 /* Sections */
 /* ============================================ */
+
 /**
  * Remove the margin in all browsers.
  */
+
 body {
   margin: 0;
 }
@@ -57,12 +40,14 @@ body {
 /**
  * Render the `main` element consistently in IE.
  */
+
 main {
   display: block;
 }
 
 /* Vertical rhythm */
 /* ============================================ */
+
 p,
 table,
 blockquote,
@@ -77,6 +62,7 @@ dl {
 
 /* Headings */
 /* ============================================ */
+
 h1,
 h2,
 h3,
@@ -90,6 +76,7 @@ h6 {
 
 /* Lists (enumeration) */
 /* ============================================ */
+
 ul,
 ol {
   margin: 0;
@@ -99,6 +86,7 @@ ol {
 
 /* Lists (definition) */
 /* ============================================ */
+
 dt {
   font-weight: bold;
 }
@@ -109,10 +97,12 @@ dd {
 
 /* Grouping content */
 /* ============================================ */
+
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
+
 hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
@@ -127,6 +117,7 @@ hr {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+
 pre {
   font-family: monospace, monospace; /* 1 */
   font-size: inherit; /* 2 */
@@ -138,9 +129,11 @@ address {
 
 /* Text-level semantics */
 /* ============================================ */
+
 /**
  * Remove the gray background on active links in IE 10.
  */
+
 a {
   background-color: transparent;
   text-decoration: none;
@@ -151,6 +144,7 @@ a {
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
+
 abbr[title] {
   text-decoration: underline dotted; /* 2 */
 }
@@ -158,6 +152,7 @@ abbr[title] {
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
+
 b,
 strong {
   font-weight: bolder;
@@ -167,6 +162,7 @@ strong {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+
 code,
 kbd,
 samp {
@@ -177,6 +173,7 @@ samp {
 /**
  * Add the correct font size in all browsers.
  */
+
 small {
   font-size: 80%;
 }
@@ -185,6 +182,7 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
+
 sub,
 sup {
   font-size: 75%;
@@ -203,9 +201,11 @@ sup {
 
 /* Replaced content */
 /* ============================================ */
+
 /**
  * Prevent vertical alignment issues.
  */
+
 svg,
 img,
 embed,
@@ -216,11 +216,13 @@ iframe {
 
 /* Forms */
 /* ============================================ */
+
 /**
  * Reset form fields to make them styleable.
  * 1. Make form elements stylable across systems iOS especially.
  * 2. Inherit text-transform from parent.
  */
+
 button,
 input,
 optgroup,
@@ -242,12 +244,13 @@ textarea {
 /**
  * Reset radio and checkbox appearance to preserve their look in iOS.
  */
-[type=checkbox] {
+
+[type="checkbox"] {
   -webkit-appearance: checkbox;
   appearance: checkbox;
 }
 
-[type=radio] {
+[type="radio"] {
   -webkit-appearance: radio;
   appearance: radio;
 }
@@ -255,23 +258,25 @@ textarea {
 /**
  * Correct cursors for clickable elements.
  */
+
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   cursor: pointer;
 }
 
 button:disabled,
-[type=button]:disabled,
-[type=reset]:disabled,
-[type=submit]:disabled {
+[type="button"]:disabled,
+[type="reset"]:disabled,
+[type="submit"]:disabled {
   cursor: default;
 }
 
 /**
  * Improve outlines for Firefox and unify style with input elements & buttons.
  */
+
 :-moz-focusring {
   outline: auto;
 }
@@ -283,6 +288,7 @@ select:disabled {
 /**
  * Remove padding
  */
+
 option {
   padding: 0;
 }
@@ -290,6 +296,7 @@ option {
 /**
  * Reset to invisible
  */
+
 fieldset {
   margin: 0;
   padding: 0;
@@ -303,6 +310,7 @@ legend {
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
+
 progress {
   vertical-align: baseline;
 }
@@ -310,6 +318,7 @@ progress {
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
+
 textarea {
   overflow: auto;
 }
@@ -317,22 +326,25 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
 /**
  * 1. Correct the outline style in Safari.
  */
-[type=search] {
+
+[type="search"] {
   outline-offset: -2px; /* 1 */
 }
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type=search]::-webkit-search-decoration {
+
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -340,6 +352,7 @@ textarea {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Fix font inheritance.
  */
+
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
@@ -348,15 +361,18 @@ textarea {
 /**
  * Clickable labels
  */
+
 label[for] {
   cursor: pointer;
 }
 
 /* Interactive */
 /* ============================================ */
+
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
+
 details {
   display: block;
 }
@@ -364,6 +380,7 @@ details {
 /*
  * Add the correct display in all browsers.
  */
+
 summary {
   display: list-item;
 }
@@ -371,15 +388,18 @@ summary {
 /*
  * Remove outline for editable content.
  */
+
 [contenteditable]:focus {
   outline: auto;
 }
 
 /* Tables */
 /* ============================================ */
+
 /**
 1. Correct table border color inheritance in all Chrome and Safari.
 */
+
 table {
   border-color: inherit; /* 1 */
   border-collapse: collapse;
@@ -399,110 +419,3 @@ th {
   text-align: left;
   font-weight: bold;
 }
-
-/* 基本 */
-body {
-  font-family: "Noto Sans JP", sans-serif;
-}
-
-.container {
-  width: 84%;
-  margin: 0 auto;
-}
-
-@media (min-width: 900px) {
-  .container {
-    width: 91%;
-    max-width: 1240px;
-  }
-}
-.sr-only {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-/* ヘッダー */
-.header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 74px;
-}
-
-@media (min-width: 900px) {
-  .header .container {
-    height: 100px;
-  }
-}
-/* ヘッダー：サイト名 */
-.site {
-  display: flex;
-  align-items: center;
-}
-
-.site img {
-  width: 42px;
-  margin-right: 10px;
-}
-
-.site .corp {
-  color: #333333;
-  font-size: 12px;
-  font-weight: 900;
-  line-height: 1.4;
-}
-
-.site .desc {
-  color: #707f89;
-  font-size: 10px;
-  line-height: 1.4;
-}
-
-@media (min-width: 900px) {
-  .site img {
-    width: 59px;
-    margin-right: 18px;
-  }
-  .site .corp {
-    font-size: 20px;
-  }
-  .site .desc {
-    font-size: 12px;
-  }
-}
-/* ナビゲーションボタン */
-.nav-button {
-  box-sizing: content-box;
-  padding: 0;
-  outline: none;
-  border: none;
-  background: none;
-  width: 20px;
-  height: 14px;
-  cursor: pointer;
-  color: #2e5180;
-}
-
-.nav-button::before,
-.nav-button::after {
-  content: "";
-  display: block;
-  height: 2px;
-  background-color: currentColor;
-  transform: translateY(5px);
-  transition: 0.3s ease-in-out;
-}
-
-.nav-button::before {
-  transform: translateY(-5px);
-  box-shadow: 0 6px currentColor;
-}
-
-/* ナビゲーションボタン（閉じるボタン） */
-/*# sourceMappingURL=style.css.map */
