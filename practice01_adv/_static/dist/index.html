@@ -17,12 +17,14 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="site">
+      <div class="header-container">
+        <div class="header-container__site">
           <img src="img/bb.svg" alt="" />
-          <div>
-            <p class="corp">BBアシスタントカンパニー</p>
-            <p class="desc">確かなスタッフによる業務サポート</p>
+          <div class="header-container__text-wrapper">
+            <p class="header-container__corp">BBアシスタントカンパニー</p>
+            <p class="header-container__desc">
+              確かなスタッフによる業務サポート
+            </p>
           </div>
         </div>
 
@@ -34,8 +36,12 @@
           </ul>
         </nav> -->
 
-        <button type="button" class="nav-button" onClick="navFunc()">
-          <span class="sr-only">MENU</span>
+        <button
+          type="button"
+          class="header-container__nav-button"
+          onClick="navFunc()"
+        >
+          <span class="header-container__sr-only">MENU</span>
         </button>
       </div>
     </header>
