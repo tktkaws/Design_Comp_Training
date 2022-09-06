@@ -8,6 +8,7 @@
 
 bin/
 practice01_adv/_gulp/node_modules/
+portfolio_00/_gulp/node_modules/
 
 # nuget.exe は必用なファイル
 

@@ -1,0 +1,87 @@
+.nav-grid {
+  display: grid;
+  grid-template-rows: 33vh 33vh 33vh;
+  grid-template-columns: 30vh 30vh 30vh;
+  grid-template-areas:
+    "a b c"
+    "a b c"
+    "d e f";
+}
+
+.nav-grid__image-01 {
+  grid-area: a;
+  background-image: url(../img/01.png);
+  object-fit: cover;
+}
+.nav-grid__image-02 {
+  grid-area: b;
+  background-image: url(../img/02.png);
+}
+.nav-grid__image-03 {
+  grid-area: c;
+  background-image: url(../img/03.png);
+}
+.nav-grid__image-04 {
+  grid-area: d;
+  background-image: url(../img/04.png);
+}
+.nav-grid__image-05 {
+  grid-area: e;
+  background-image: url(../img/05.png);
+}
+.nav-grid__image-06 {
+  grid-area: f;
+  background-image: url(../img/06.png);
+}
+
+.fv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin-top: 25vh;
+}
+
+h1 {
+  font-family: "Dela Gothic One", cursive;
+  color: blue;
+  // border: solid 1px;
+  width: 250px;
+  height: 400px;
+  font-size: 60px;
+}
+
+/*========= 左固定レイアウトのためのCSS ===============*/
+
+/*左と右を囲う全体のエリア*/
+.wrapper {
+  position: relative; /*position stickyの基点にするため relativeをかける*/
+  display: flex; /*左エリア、右エリア横並び指定*/
+  flex-wrap: wrap; /*ボックスの折り返し可*/
+}
+
+/*左エリア*/
+.fixed-area {
+  /*左固定記述*/
+  position: -webkit-sticky; /*Safari用*/
+  position: sticky;
+  top: 0;
+  /*横半分50%　縦を100vhにする*/
+  width: 50%;
+  height: 100vh;
+  /*装飾のためのCSS*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  background-size: cover;
+  color: #fff;
+}
+
+/*右エリア*/
+.container {
+  /*横半分50%にする*/
+  width: 50%;
+}
