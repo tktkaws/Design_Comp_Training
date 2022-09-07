@@ -46,12 +46,46 @@
 
 h1 {
   font-family: "Dela Gothic One", cursive;
-  color: blue;
+  color: black;
   // border: solid 1px;
   width: 250px;
   height: 400px;
   font-size: 60px;
 }
+
+
+
+// .typing {
+//   height: 100%;
+//   width: 50%;
+//   position: relative;
+//   background-image: url('images/my-icon.JPG');
+//   background-size: 50%;
+// }
+// .typed_wrap {
+//  position: absolute;
+//  width: 100vw;
+//  text-align: center;
+//  top: 50%;
+//  left: 50%;
+//  transform: translate(-50%, -50%);
+//  background: rgba(7, 6, 6, 0.5);
+// }
+// .typed_wrap h1 {
+//  color: #FFF;
+//  font-family: 'Times New Roman', Times, serif;
+//  font-size: 3rem;
+//  height: 200px;
+//  line-height: 200px;
+// }
+// .typed::after {
+//  content: "|";
+//  animation: blink 0.7s infinite;
+// }
+// @keyframes blink {
+//  50%{opacity: 0;}
+// }
+
 
 /*========= 左固定レイアウトのためのCSS ===============*/
 
