@@ -500,6 +500,8 @@ th {
   flex-direction: column-reverse;
   align-items: center;
   line-height: 1.3;
+  width: 84%;
+  margin: 0 auto;
 }
 .Hero img {
   max-width: 100%;
@@ -529,6 +531,42 @@ th {
   .Hero img {
     width: calc((100vw - 17px) * 0.84);
     max-width: 637.78px;
+  }
+}
+.Message {
+  padding: 67px 0;
+  background-color: #2e5180;
+  color: #ffffff;
+}
+.Message--container {
+  width: 84%;
+  margin: 0 auto;
+}
+.Message--container .Message__title {
+  margin-bottom: 38px;
+  font-size: 24px;
+  line-height: 1.67;
+  text-align: center;
+}
+.Message--container .Message__contents {
+  max-width: 640px;
+  margin: auto;
+  font-size: 14px;
+  line-height: 1.86;
+}
+
+@media (min-width: 900px) {
+  .Message {
+    padding: 81px 0;
+  }
+  .Message .Message--container .Message__title {
+    font-size: 36px;
+    line-height: 1.33;
+  }
+}
+@media (max-width: 374px) {
+  .Message .Message--container .Message__title {
+    font-size: 20px;
   }
 }
 /* 基本 */
