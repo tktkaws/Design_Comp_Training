@@ -215,3 +215,121 @@
     }
   }
 }
+
+/* サービス */
+.service {
+  padding: 67px 0;
+  text-align: center;
+  h2 {
+    display: inline-block;
+    margin-bottom: 16px;
+    padding-bottom: 9px;
+    border-bottom: dotted 2px currentColor;
+    font-size: 24px;
+    color: #2e5180;
+  }
+  h2 + p {
+    color: #2e5180;
+    font-size: 16px;
+  }
+}
+
+/* サービス： サービスの詳細 */
+.Details {
+  margin-top: 53px;
+  color: #333333;
+}
+
+.Details__Detail {
+  &:not(:last-child) {
+    margin-bottom: 67px;
+  }
+  h3 {
+    margin-bottom: 17px;
+    font-size: 20px;
+    line-height: 1.75;
+  }
+
+  p {
+    max-width: 264px;
+    margin: 0 auto 25px;
+    font-size: 12px;
+    line-height: 2;
+  }
+
+  figure {
+    height: 246px;
+    margin-bottom: 22px;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.Details__Detail__OfficeImage {
+  background-image: url(../img/office.jpg);
+}
+.Details__Detail__ManageImage {
+  background-image: url(../img/manage.jpg);
+}
+.Details__Detail__ReasrchImage {
+  background-image: url(../img/research.jpg);
+}
+
+@media (min-width: 900px) {
+  .Details {
+    display: flex;
+    margin-top: 75px;
+  }
+
+  .Details__Detail {
+    flex: 1;
+    margin-right: 3.22%;
+    /* ボタンの位置を揃える */
+    display: flex;
+    flex-direction: column;
+
+    &:first-child {
+      margin-left: 3.22%;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    h3 {
+      margin-bottom: 26px;
+      font-size: 30px;
+      line-height: 1.4;
+    }
+
+    p {
+      width: 78%;
+      max-width: none;
+    }
+
+    figure {
+      height: 360px;
+      margin-bottom: 33px;
+    }
+
+    /* ボタンの位置を揃える */
+    .btn {
+      margin-top: auto;
+    }
+  }
+}
+
+/* ボタン */
+.btn {
+  display: block;
+  width: 208px;
+  margin: 0 auto;
+  padding: 11px 11px 13px;
+  box-sizing: border-box;
+  border: solid 2px currentColor;
+  border-radius: 24px;
+  color: #2e5180;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
