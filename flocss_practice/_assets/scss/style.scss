@@ -1,3 +1,9 @@
 @charset "UTF-8";
 
-@use './modules/index';
+// @use './modules/index';
+
+/*--------------------------------------*
+ * foundation
+ *--------------------------------------*/
+@use "./foundation/base";
+@use "./foundation/variable";
