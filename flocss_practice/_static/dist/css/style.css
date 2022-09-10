@@ -89,6 +89,75 @@ a:hover img {
   background-color: #fff;
 }
 
+.p-fv {
+  background-color: #1b7c26;
+  color: #fff;
+}
+.p-fv__content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 18px;
+  padding: 40px 0;
+  max-width: 100%;
+  font-weight: bold;
+}
+.p-fv__content figcaption {
+  flex: 2;
+}
+.p-fv__content h1 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+.p-fv__content h1 .text-100 {
+  font-size: 5rem;
+}
+.p-fv__content h1 .text-96 {
+  font-size: 4.8rem;
+}
+.p-fv__content h1 .text-80 {
+  font-size: 4rem;
+}
+.p-fv__content p {
+  font-size: 2.2rem;
+}
+.p-fv__content img {
+  flex: 1;
+  width: 250px;
+  box-shadow: -6px 6px 10px -2px #555, 0 0 3px #555;
+  border-radius: 3px;
+}
+@media (min-width: 750px) {
+  .p-fv__content {
+    flex-direction: row;
+    padding: 60px 0;
+  }
+  .p-fv__content figcaption {
+    flex: 2;
+  }
+  .p-fv__content h1 {
+    font-size: 5.6rem;
+  }
+  .p-fv__content h1 .text-100 {
+    font-size: 10rem;
+  }
+  .p-fv__content h1 .text-96 {
+    font-size: 9.6rem;
+  }
+  .p-fv__content h1 .text-80 {
+    font-size: 8rem;
+  }
+  .p-fv__content p {
+    font-size: 2.4rem;
+  }
+}
+
+.u-inline-block {
+  display: inline-block;
+}
+
 /*--------------------------------------*
  * foundation
  *--------------------------------------*/
@@ -98,4 +167,10 @@ a:hover img {
 /*-------------------
 * component
 -------------------*/
+/*-------------------
+  * project
+  -------------------*/
+/*-------------------
+  * utility
+  -------------------*/
 /*# sourceMappingURL=style.css.map */
