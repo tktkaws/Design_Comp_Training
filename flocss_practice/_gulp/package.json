@@ -15,5 +15,11 @@
     "gulp-notify": "^4.0.0",
     "gulp-plumber": "^1.2.1"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "gulp-changed": "^4.0.3",
+    "gulp-imagemin": "^7.1.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.2"
+  }
 }

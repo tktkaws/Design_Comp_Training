@@ -7,3 +7,14 @@
  *--------------------------------------*/
 @use "./foundation/base";
 @use "./foundation/variable";
+
+/*--------------------------------------*
+* layout
+*--------------------------------------*/
+@use "./layout/header";
+
+/*-------------------
+* component
+-------------------*/
+@use "./object/component/inner";
+@use "./object/component/button";
