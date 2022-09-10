@@ -12,6 +12,7 @@
 * layout
 *--------------------------------------*/
 @use "./layout/header";
+@use "./layout/footer";
 
 /*-------------------
 * component
@@ -27,6 +28,7 @@
 @use "./object/project/theme";
 @use "./object/project/solution";
 @use "./object/project/faq";
+@use "./object/project/cv";
 
 /*-------------------
   * utility

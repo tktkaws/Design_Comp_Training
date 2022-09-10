@@ -25,7 +25,6 @@ object {
 
 a {
   color: #0066c0;
-  text-decoration: underline;
   transition: 0.4s;
 }
 a:hover {
@@ -66,6 +65,25 @@ a:hover img {
 .l-header__logo {
   display: inline-block;
   max-width: 40%;
+}
+
+.l-footer {
+  background-color: #333;
+  color: #fff;
+}
+.l-footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 30px 0;
+}
+.l-footer__lists {
+  display: flex;
+  gap: 10px;
+  padding: 0 0 30px;
+}
+.l-footer__lists a {
+  color: #fff;
 }
 
 .c-inner {
@@ -274,6 +292,23 @@ a:hover img {
   100% {
     opacity: 1;
     transform: none;
+  }
+}
+
+.p-cv__content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.p-cv .c-button {
+  display: block;
+  margin: 10px auto;
+  font-size: 2rem;
+  border: 5px solid #f99f48;
+}
+@media (min-width: 750px) {
+  .p-cv .c-button {
+    font-size: 3.2rem;
   }
 }
 
