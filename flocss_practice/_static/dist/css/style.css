@@ -89,6 +89,20 @@ a:hover img {
   background-color: #fff;
 }
 
+.c-section {
+  padding: 50px 0 90px;
+  background-color: #f6fff7;
+}
+.c-section:nth-of-type(odd) {
+  background-color: #fff;
+}
+.c-section__title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 38px;
+}
+
 .p-fv {
   background-color: #1b7c26;
   color: #fff;
@@ -151,6 +165,115 @@ a:hover img {
   }
   .p-fv__content p {
     font-size: 2.4rem;
+  }
+}
+
+.p-theme__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 32px;
+}
+.p-theme__content img {
+  width: 420px;
+  height: 320px;
+  object-fit: cover;
+}
+.p-theme__lists {
+  font-size: 2rem;
+}
+.p-theme__lists li {
+  position: relative;
+  padding-left: 24px;
+  margin: 10px;
+}
+.p-theme__lists li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  font-weight: 900;
+  left: 0;
+  position: absolute;
+}
+
+.p-solution__lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  gap: 10px;
+}
+.p-solution__list {
+  text-align: center;
+  font-weight: bold;
+  background-color: #efefef;
+  border-radius: 4px;
+}
+.p-solution__list img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+}
+.p-solution__list p {
+  padding: 10px 16px;
+}
+
+.p-faq__content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.p-faq__details {
+  margin-bottom: 5px;
+}
+.p-faq__summary {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #a0daa8;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.p-faq__summary:hover {
+  background-color: #6ebe79;
+}
+.p-faq__summary::-webkit-details-marker {
+  display: none;
+}
+.p-faq__summary:after {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  content: "\f067";
+  font-weight: bold;
+  font-size: 20px;
+  color: #1b7c26;
+  margin: auto;
+  top: 16%;
+  right: 3%;
+  transition: 0.4s;
+}
+.p-faq__answer {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+.p-faq__details[open] .p-faq__summary {
+  background-color: #6ebe79;
+}
+.p-faq__details[open] .p-faq__summary:after {
+  transform: rotate(45deg);
+}
+.p-faq__details[open] .p-faq__answer {
+  animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
   }
 }
 
