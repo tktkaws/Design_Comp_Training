@@ -1,0 +1,35 @@
+.p-home-grids {
+  display: grid;
+  grid-template-rows: 33vh 33vh 33vh;
+  grid-template-columns: 30vh 30vh 30vh;
+  grid-template-areas:
+    "a b c"
+    "a b c"
+    "d e f";
+}
+
+.p-home__image-grid01 {
+  grid-area: a;
+  background-image: url(../img/01.png);
+  object-fit: cover;
+}
+.p-home__image-grid02 {
+  grid-area: b;
+  background-image: url(../img/02.png);
+}
+.p-home__image-grid03 {
+  grid-area: c;
+  background-image: url(../img/03.png);
+}
+.p-home__image-grid04 {
+  grid-area: d;
+  background-image: url(../img/04.png);
+}
+.p-home__image-grid05 {
+  grid-area: e;
+  background-image: url(../img/05.png);
+}
+.p-home__image-grid06 {
+  grid-area: f;
+  background-image: url(../img/06.png);
+}

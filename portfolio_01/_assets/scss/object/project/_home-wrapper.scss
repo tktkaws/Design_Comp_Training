@@ -1,0 +1,65 @@
+// /*========= 左固定レイアウトのためのCSS ===============*/
+
+// /*左と右を囲う全体のエリア*/
+// .wrapper {
+//   position: relative; /*position stickyの基点にするため relativeをかける*/
+//   display: flex; /*左エリア、右エリア横並び指定*/
+//   flex-wrap: wrap; /*ボックスの折り返し可*/
+// }
+
+// /*左エリア*/
+// .fixed-area {
+//   /*左固定記述*/
+//   position: -webkit-sticky; /*Safari用*/
+//   position: sticky;
+//   top: 0;
+//   /*横半分50%　縦を100vhにする*/
+//   width: 50%;
+//   height: 100vh;
+//   /*装飾のためのCSS*/
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: black;
+//   background-size: cover;
+//   color: #fff;
+// }
+
+// /*右エリア*/
+// .container {
+//   /*横半分50%にする*/
+//   width: 50%;
+// }
+
+/*========= 左固定レイアウトのためのCSS ===============*/
+
+/*左と右を囲う全体のエリア*/
+.p-home-wrapper {
+  position: relative; /*position stickyの基点にするため relativeをかける*/
+  display: flex; /*左エリア、右エリア横並び指定*/
+  flex-wrap: wrap; /*ボックスの折り返し可*/
+}
+
+/*左エリア*/
+.p-home-left {
+  /*左固定記述*/
+  position: -webkit-sticky; /*Safari用*/
+  position: sticky;
+  top: 0;
+  /*横半分50%　縦を100vhにする*/
+  width: 50%;
+  height: 100vh;
+  /*装飾のためのCSS*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  background-size: cover;
+  color: #fff;
+}
+
+/*右エリア*/
+.p-home-right {
+  /*横半分50%にする*/
+  width: 50%;
+}
