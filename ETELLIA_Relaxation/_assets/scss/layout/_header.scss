@@ -1,0 +1,44 @@
+@use "./../foundation/color" as *;
+
+.l-header {
+  // position: sticky;
+  // top: 0;
+  // background-color: $color-black;
+  // z-index: 1;
+
+  &__black {
+    background-color: $color-black;
+    height: 70px;
+  }
+
+  &__wrapper {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  &__contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: inline-block;
+    // max-width: 40%;
+    // color: $color-base;
+    width: 221px;
+    height: 56px;
+  }
+
+  &__nav-lists {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  &__nav-list {
+    margin-top: 10px;
+  }
+  &__nav-link {
+    color: $color-black;
+  }
+}
