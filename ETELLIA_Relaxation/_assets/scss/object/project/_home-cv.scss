@@ -1,0 +1,34 @@
+.p-home-cv {
+  background-color: black;
+  height: 350px;
+  padding-top: 50px;
+  &__text {
+  }
+  &__heading {
+    font-family: "Noto Serif JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 69px;
+    color: #ffffff;
+    text-align: center;
+  }
+  &__content {
+    font-family: "Noto Serif JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+
+    color: #ffffff;
+    width: 586px;
+    margin: 0 auto;
+  }
+
+  &__btn-wrapper {
+    margin-top: 48px;
+    margin-left: 294px;
+    margin-right: 294px;
+  }
+}

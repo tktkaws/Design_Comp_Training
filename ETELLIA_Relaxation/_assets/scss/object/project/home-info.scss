@@ -1,0 +1,42 @@
+.p-home-info {
+  display: flex;
+  height: 400px;
+  background-color: black;
+  color: white;
+  border-bottom: 2px solid #ffffff;
+
+  &__text {
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  &__content {
+    font-family: "Noto Serif JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    margin-top: 10px;
+  }
+  &__content--large {
+    font-family: "Noto Serif JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+
+    color: #ffffff;
+  }
+  &__map {
+    width: 50%;
+
+    iframe {
+      width: 450px;
+      height: 306px;
+    }
+  }
+}

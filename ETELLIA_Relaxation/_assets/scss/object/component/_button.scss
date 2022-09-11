@@ -14,3 +14,25 @@
     background-color: $color-base;
   }
 }
+
+.c-button--big {
+  display: inline-block;
+  padding: 10px 100px;
+  color: $color-base;
+  background-color: $color-accent;
+  border: solid 2px $color-accent;
+  border-radius: 20px;
+  text-decoration: none;
+  &:hover {
+    color: $color-accent;
+    background-color: $color-base;
+  }
+
+  &__text {
+    font-family: "Noto Serif JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
