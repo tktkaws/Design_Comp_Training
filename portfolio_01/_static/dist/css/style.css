@@ -584,6 +584,14 @@ a:hover img {
   font-size: 60px;
 }
 
+.typed {
+  font-family: "Dela Gothic One", cursive;
+  color: black;
+  width: 250px;
+  height: 400px;
+  font-size: 60px;
+}
+
 .u-inline-block {
   display: inline-block;
 } /*--------------------------------------*
