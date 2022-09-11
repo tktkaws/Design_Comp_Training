@@ -1,0 +1,25 @@
+.c-heading {
+  margin-bottom: 15px;
+  border-bottom: solid 1px red;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  &__title {
+    font-family: Noto Serif JP;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  &__subtitle {
+    font-family: Noto Serif JP;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 20px;
+  }
+}

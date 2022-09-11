@@ -1,0 +1,39 @@
+.l-fv {
+  background-image: url(../img/ページトップ.svg);
+  background-position: center;
+  background-size: cover;
+  height: 396px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  position: relative;
+
+  padding-top: 129px;
+  padding-left: 275px;
+  display: flex;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 396px;
+    width: 100%;
+    background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0.2) 100%);
+  }
+
+  &__title {
+    width: 576px;
+    z-index: 1;
+  }
+
+  &__content {
+    font-family: "Noto Serif JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    color: #ffffff;
+    line-height: 69px;
+  }
+}

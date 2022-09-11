@@ -62,7 +62,12 @@ const browserSyncFunc = () => {
 };
 
 const browserSyncOption = {
-  server: distBase,
+  // server: distBase,
+  server: {
+    baseDir: distBase,
+    // routes: { "/salon": "../_static/dist" }, // 追加
+  },
+  // startPath: "/salon.html", // 追加
 };
 
 /**
