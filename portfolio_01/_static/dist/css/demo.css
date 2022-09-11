@@ -1,0 +1,50 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+.l-header {
+  min-height: 500px;
+}
+.l-header.inverse {
+  color: #fff;
+}
+.l-tansiton__button {
+  text-align: center;
+}
+.l-tansiton__button a {
+  min-width: 200px;
+  padding: 1rem 2rem;
+  border: none;
+  background: rgb(238, 117, 139);
+  background: linear-gradient(
+    115deg,
+    rgba(238, 117, 139, 1) 0%,
+    rgba(32, 38, 246, 1) 100%
+  );
+}
+.main-container {
+  padding: 30px 0 60px;
+}
+.img-wrapper {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.content {
+  padding: 20px 30px;
+}
+img {
+  max-width: 100%;
+}
+
+.js-barba__leave {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+footer {
+  padding: 60px 0;
+  text-align: center;
+  font-size: 12px;
+}
