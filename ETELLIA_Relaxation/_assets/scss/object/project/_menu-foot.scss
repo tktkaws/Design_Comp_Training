@@ -1,4 +1,4 @@
-.p-menu-body {
+.p-menu-foot {
   &__text {
     font-family: "Noto Serif JP";
     font-style: normal;
@@ -6,7 +6,6 @@
     font-size: 19.2px;
     line-height: 28px;
   }
-
   &__price-list {
     display: flex;
     justify-content: space-between;
@@ -17,13 +16,6 @@
     flex-direction: row;
     align-items: flex-start;
     flex-basis: 50%;
-  }
-  &__course--red {
-    padding: 5px 20px;
-    background: #990000;
-    width: 100px;
-    height: 33px;
-    display: inline-block;
   }
   &__course {
     font-family: "Noto Serif JP";
