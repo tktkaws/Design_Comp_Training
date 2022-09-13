@@ -945,6 +945,27 @@ a:hover img {
   color: #990000;
 }
 
+.p-recruit-outline__table {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.p-recruit-outline__tr {
+  padding: 10px;
+}
+.p-recruit-outline__th {
+  border: solid 1px;
+  padding: 10px;
+  text-align: center;
+  width: 35%;
+}
+.p-recruit-outline__td {
+  border: solid 1px;
+  padding: 10px;
+  text-align: center;
+  width: 65%;
+}
+
 /*--------------------------------------*
  * foundation
  *--------------------------------------*/

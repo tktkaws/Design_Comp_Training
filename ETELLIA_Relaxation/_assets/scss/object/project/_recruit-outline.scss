@@ -1,0 +1,24 @@
+.p-recruit-outline {
+  &__table {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  &__tbody {
+  }
+  &__tr {
+    padding: 10px;
+  }
+  &__th {
+    border: solid 1px;
+    padding: 10px;
+    text-align: center;
+    width: 35%;
+  }
+  &__td {
+    border: solid 1px;
+    padding: 10px;
+    text-align: center;
+    width: 65%;
+  }
+}
