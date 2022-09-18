@@ -1,3 +1,6 @@
+@use "./../foundation/color" as *;
+@use "./../foundation/font" as *;
+
 html {
   font-size: 62.5%;
   line-height: 1.6;
@@ -6,11 +9,10 @@ html {
 }
 
 body {
-  background-color: black;
-  color: white;
+  background-color: $c-base;
+  color: $c-main;
+  font-family: $f-base;
   font-size: 1.6rem;
-  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans", Meiryo, sans-serif;
   min-width: 350px;
   width: 900px;
   overflow-x: hidden;
