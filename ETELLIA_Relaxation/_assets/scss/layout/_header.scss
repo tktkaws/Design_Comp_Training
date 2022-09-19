@@ -1,4 +1,7 @@
 @use "./../foundation/color" as *;
+// $c-base: rgb(0, 0, 0);
+// $c-main: rgb(255, 255, 255);
+// $c-accent：: rgb(153, 0, 0);
 
 .l-header {
   // position: sticky;
@@ -7,8 +10,8 @@
   // z-index: 1;
 
   &__black {
-    background-color: $color-black;
-    height: 70px;
+    background-color: $c-base;
+    height: 77px;
   }
 
   &__wrapper {
@@ -28,20 +31,33 @@
     // color: $color-base;
     width: 221px;
     height: 56px;
+    margin-left: 35px;
+    margin-top: 2px;
+  }
+
+  &__btn-wrapper {
+    margin-right: 28px;
+    margin-top: 14px;
+    // margin-right: 26px;
+    // margin-top: 12px;
+  }
+
+  &__nav {
   }
 
   &__nav-lists {
+    height: 49px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: white;
-    color: black;
+    background-color: $c-main;
+    color: $c-base;
   }
   &__nav-list {
     margin-top: 10px;
     margin-bottom: 10px;
   }
   &__nav-link {
-    color: $color-black;
+    color: $c-base;
   }
 }
