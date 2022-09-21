@@ -454,8 +454,8 @@ a:hover img {
   margin-top: 2px;
 }
 .l-header__btn-wrapper {
-  margin-right: 28px;
-  margin-top: 14px;
+  margin-right: 25px;
+  margin-top: 10px;
 }
 .l-header__nav-lists {
   height: 49px;
@@ -528,7 +528,6 @@ a:hover img {
 }
 
 .c-button {
-  height: 43px;
   display: inline-block;
   padding: 10px 30px;
   color: #fff;
@@ -537,7 +536,6 @@ a:hover img {
   border-radius: 50px;
   font-weight: bold;
   text-decoration: none;
-  font-family: "Noto Serif JP";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -556,17 +554,13 @@ a:hover img {
   border: solid 2px #990000;
   border-radius: 20px;
   text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
 }
 .c-button--large:hover {
   color: #990000;
   background-color: #fff;
-}
-.c-button--large__text {
-  font-family: "Noto Serif JP";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 23px;
 }
 
 .c-heading {
@@ -695,34 +689,29 @@ a:hover img {
 }
 
 .p-home-cv {
-  background-color: black;
-  height: 350px;
+  height: 371px;
   padding-top: 50px;
 }
 .p-home-cv__heading {
-  font-family: "Noto Serif JP";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 69px;
-  color: #ffffff;
   text-align: center;
 }
 .p-home-cv__content {
-  font-family: "Noto Serif JP";
+  width: 585px;
+  margin: 0 auto;
+  margin-top: 17px;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 23px;
   text-align: center;
-  color: #ffffff;
-  width: 586px;
-  margin: 0 auto;
 }
 .p-home-cv__btn-wrapper {
-  margin-top: 48px;
-  margin-left: 294px;
-  margin-right: 294px;
+  margin-top: 45px;
+  text-align: center;
 }
 
 .p-home-info {

@@ -1,7 +1,7 @@
 @use "./../../foundation/color" as *;
 
 .c-button {
-  height: 43px;
+  // height: 43px;
   display: inline-block;
   padding: 10px 30px;
   color: $color-base;
@@ -10,7 +10,6 @@
   border-radius: 50px;
   font-weight: bold;
   text-decoration: none;
-  font-family: "Noto Serif JP";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -30,16 +29,13 @@
   border: solid 2px $color-accent;
   border-radius: 20px;
   text-decoration: none;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+
   &:hover {
     color: $color-accent;
     background-color: $color-base;
-  }
-
-  &__text {
-    font-family: "Noto Serif JP";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 23px;
   }
 }
