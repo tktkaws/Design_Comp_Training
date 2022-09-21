@@ -501,8 +501,6 @@ a:hover img {
   background-size: cover;
   background-position: center center;
   position: relative;
-  padding-top: 129px;
-  padding-left: 275px;
   display: flex;
 }
 .l-fv::after {
@@ -515,16 +513,25 @@ a:hover img {
   background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0.2) 100%);
 }
 .l-fv__title {
-  width: 576px;
+  margin-top: 170px;
+  margin-left: 164px;
   z-index: 1;
 }
 .l-fv__content {
-  font-family: "Noto Serif JP";
-  font-style: normal;
   font-weight: 400;
-  font-size: 48px;
-  color: #ffffff;
-  line-height: 69px;
+  font-size: 40px;
+  line-height: 57px;
+}
+
+.c-inner {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 10px 30px;
+}
+
+.c-wrapper {
+  width: 800px;
+  margin: 0 auto;
 }
 
 .c-button {
@@ -564,28 +571,28 @@ a:hover img {
 }
 
 .c-heading {
-  margin-bottom: 15px;
+  margin-top: 33px;
   border-bottom: solid 1px red;
   display: flex;
   justify-content: start;
   align-items: center;
 }
 .c-heading__title {
-  font-family: Noto Serif JP;
   font-size: 32px;
   font-weight: 700;
   line-height: 46px;
   letter-spacing: 0em;
   text-align: left;
+  margin-bottom: 16px;
 }
 .c-heading__subtitle {
-  font-family: Noto Serif JP;
-  font-size: 19px;
+  font-size: 19.2px;
+  line-height: 28px;
   font-weight: 700;
   line-height: 28px;
   letter-spacing: 0em;
   text-align: left;
-  margin-left: 20px;
+  margin-left: 34px;
 }
 
 .p-home-fv {
@@ -679,9 +686,6 @@ a:hover img {
   color: #ffffff;
   z-index: 1;
 }
-.p-home-menu__text--deco {
-  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.25);
-}
 
 .p-home-image__img {
   height: 305px;
@@ -715,7 +719,7 @@ a:hover img {
 
 .p-home-info {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
   display: flex;
 }
 .p-home-info__text {
@@ -753,18 +757,40 @@ a:hover img {
 
 .p-salon-about__contents {
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 20px;
+  justify-content: flex-start;
+  margin-top: 27px;
 }
 .p-salon-about__image {
-  background-image: url(../img/サロンについて1.svg);
   width: 250px;
   height: 250px;
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.p-salon-about__text {
+  margin-top: 12px;
+  margin-left: 92px;
+}
+.p-salon-about__text-content-top {
+  text-align: center;
+  margin-bottom: 10px;
+  line-height: 23px;
+  margin-left: -21px;
+}
 .p-salon-about__text-content {
   text-align: center;
+  margin-bottom: 10px;
+  line-height: 23px;
+}
+.p-salon-about__contents--reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.p-salon-about__text--reverse {
+  margin-top: 30px;
+  margin-top: 41px;
+  margin-left: 6px;
 }
 
 .p-salon-map__map iframe {

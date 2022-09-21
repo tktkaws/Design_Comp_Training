@@ -1,25 +1,25 @@
 .c-heading {
-  margin-bottom: 15px;
+  margin-top: 33px;
   border-bottom: solid 1px red;
   display: flex;
   justify-content: start;
   align-items: center;
 
   &__title {
-    font-family: Noto Serif JP;
     font-size: 32px;
     font-weight: 700;
     line-height: 46px;
     letter-spacing: 0em;
     text-align: left;
+    margin-bottom: 16px;
   }
   &__subtitle {
-    font-family: Noto Serif JP;
-    font-size: 19px;
+    font-size: 19.2px;
+    line-height: 28px;
     font-weight: 700;
     line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 34px;
   }
 }

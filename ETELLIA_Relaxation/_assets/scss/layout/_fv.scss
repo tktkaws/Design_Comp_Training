@@ -8,9 +8,6 @@
   background-position: center center;
 
   position: relative;
-
-  padding-top: 129px;
-  padding-left: 275px;
   display: flex;
 
   &::after {
@@ -24,16 +21,14 @@
   }
 
   &__title {
-    width: 576px;
+    margin-top: 170px;
+    margin-left: 164px;
     z-index: 1;
   }
 
   &__content {
-    font-family: "Noto Serif JP";
-    font-style: normal;
     font-weight: 400;
-    font-size: 48px;
-    color: #ffffff;
-    line-height: 69px;
+    font-size: 40px;
+    line-height: 57px;
   }
 }
