@@ -1,13 +1,16 @@
 .p-salon-map {
+  margin-top: 48px;
+  margin-bottom: 47px;
+
   &__map {
+    margin-top: 41px;
     iframe {
-      width: 900px;
+      width: 100%;
+      height: 316px;
     }
   }
   &__text {
-    margin-top: 20px;
-
-    font-family: "Noto Serif JP";
+    margin-top: 16px;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;

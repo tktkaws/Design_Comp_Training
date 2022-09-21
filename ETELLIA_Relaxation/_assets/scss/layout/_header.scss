@@ -27,17 +27,23 @@
 
   &__logo {
     display: inline-block;
-    // max-width: 40%;
-    // color: $color-base;
     width: 221px;
     height: 56px;
     margin-left: 35px;
     margin-top: 2px;
   }
 
+  &__logo--red {
+    display: inline-block;
+    margin-left: 38px;
+    margin-top: 8px;
+  }
+
   &__btn-wrapper {
-    margin-right: 25px;
-    margin-top: 10px;
+    margin-right: 28px;
+    margin-top: 14px;
+    // margin-right: 26px;
+    // margin-top: 12px;
   }
 
   &__nav {
