@@ -1,42 +1,65 @@
 .p-menu-facial {
   &__text {
-    font-family: "Noto Serif JP";
-    font-style: normal;
     font-weight: 700;
     font-size: 19.2px;
     line-height: 28px;
+    margin-top: 16px;
   }
   &__price-list {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px dashed #ffffff;
+    margin-top: 20px;
   }
-  &__course {
-    font-family: "Noto Serif JP";
-    font-style: normal;
+  &__title {
     font-weight: 700;
     font-size: 24px;
     line-height: 34px;
   }
-  &__prices {
+  &__descriptions {
     display: flex;
-    // 縦並びにしたい
+    flex-direction: column;
     justify-content: start;
+    gap: 5px;
+    margin-bottom: 14px;
   }
-  &__price {
-    font-family: "Noto Serif JP";
-    font-style: normal;
+
+  &__descriptions--mb18 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 5px;
+    margin-bottom: 18px;
+  }
+
+  &__courses {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__time {
     font-weight: 700;
     font-size: 19.2px;
     line-height: 28px;
-    /* ボックスの高さと同一 */
-
     text-align: right;
   }
+  &__price {
+    font-weight: 700;
+    font-size: 19.2px;
+    line-height: 28px;
+    text-align: right;
+    margin-left: 22px;
+  }
+  &__price--high {
+    font-weight: 700;
+    font-size: 19.2px;
+    line-height: 28px;
+    text-align: right;
+    margin-left: 11px;
+  }
+
   &__btn-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 150px;
+    margin-top: 41px;
   }
 }
