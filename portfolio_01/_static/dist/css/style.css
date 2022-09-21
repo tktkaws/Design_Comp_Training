@@ -431,20 +431,26 @@ a:hover img {
   box-sizing: border-box;
 }
 
-.l-header {
-  position: sticky;
-  top: 0;
-  background-color: #fff;
+.site-header {
+  display: flex;
+  padding: 60px 20px;
+  position: fixed;
+  justify-content: flex-end;
+  width: 100%;
   z-index: 1;
 }
-.l-header__content {
+
+.gnav__menu {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-.l-header__logo {
-  display: inline-block;
-  max-width: 40%;
+
+.gnav__menu__item {
+  margin-left: 20px;
+}
+
+.gnav__menu__item a {
+  color: #333;
+  text-decoration: none;
 }
 
 .l-footer {
