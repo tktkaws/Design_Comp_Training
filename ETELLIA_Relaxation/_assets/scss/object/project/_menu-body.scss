@@ -14,22 +14,18 @@
     margin-top: 19px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   &__left-wrapper {
     display: flex;
     width: 50%;
-    gap: 30px;
+    gap: 16px;
   }
   &__right-wrapper {
     display: flex;
     width: 50%;
     gap: 30px;
     justify-content: flex-end;
-  }
-
-  &__course-desc {
-    margin-top: 7px;
-    margin-bottom: 10px;
   }
 
   &__course--red {
@@ -63,10 +59,25 @@
     text-align: right;
   }
 
+  &__price--high {
+    font-weight: 700;
+    font-size: 19.2px;
+    line-height: 28px;
+    text-align: right;
+    margin-left: -12px;
+  }
+
+  &__course-desc {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 8px;
+    margin-bottom: 11px;
+    margin-left: 15px;
+  }
+
   &__btn-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 150px;
+    margin-top: 45px;
   }
 }
