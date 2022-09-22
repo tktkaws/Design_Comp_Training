@@ -879,22 +879,33 @@ a:hover img {
 }
 
 .p-menu-body__text {
-  font-family: "Noto Serif JP";
-  font-style: normal;
   font-weight: 700;
   font-size: 19.2px;
   line-height: 28px;
+  margin-top: 16px;
 }
 .p-menu-body__price-list {
-  display: flex;
-  justify-content: space-between;
   border-bottom: 1px dashed #ffffff;
 }
-.p-menu-body__course-wrapper {
+.p-menu-body__main-wrapper {
+  margin-top: 19px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  flex-basis: 50%;
+  justify-content: space-between;
+}
+.p-menu-body__left-wrapper {
+  display: flex;
+  width: 50%;
+  gap: 30px;
+}
+.p-menu-body__right-wrapper {
+  display: flex;
+  width: 50%;
+  gap: 30px;
+  justify-content: flex-end;
+}
+.p-menu-body__course-desc {
+  margin-top: 7px;
+  margin-bottom: 10px;
 }
 .p-menu-body__course--red {
   padding: 5px 20px;
@@ -910,13 +921,14 @@ a:hover img {
   font-size: 24px;
   line-height: 34px;
 }
-.p-menu-body__prices {
-  display: flex;
-  justify-content: start;
+.p-menu-body__time {
+  font-weight: 700;
+  font-size: 19.2px;
+  line-height: 28px;
+  /* ボックスの高さと同一 */
+  text-align: right;
 }
 .p-menu-body__price {
-  font-family: "Noto Serif JP";
-  font-style: normal;
   font-weight: 700;
   font-size: 19.2px;
   line-height: 28px;
