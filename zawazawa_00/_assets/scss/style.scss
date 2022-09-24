@@ -5,7 +5,7 @@
  *--------------------------------------*/
 @use "./foundation/base";
 @use "./foundation/variable";
-@use "./foundation/destyle";
+@use "./foundation/reset";
 
 /*--------------------------------------*
 * layout
@@ -23,11 +23,7 @@
 /*-------------------
   * project
   -------------------*/
-@use "./object/project/fv";
-@use "./object/project/theme";
-@use "./object/project/solution";
-@use "./object/project/faq";
-@use "./object/project/cv";
+@use "./object/project/home-fv";
 
 /*-------------------
   * utility

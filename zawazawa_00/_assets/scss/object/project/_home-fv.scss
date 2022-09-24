@@ -1,0 +1,49 @@
+.p-home-fv {
+  position: relative;
+  &__slider {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__slider-image {
+    width: 588px;
+    height: 957px;
+  }
+  &__deco-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+  }
+  &__title-zone {
+    position: absolute;
+    // position: relative;
+    top: 35%;
+    left: 35%;
+    background-color: white;
+    padding: 25px;
+
+    &::before {
+      content: "";
+      margin-top: -50px;
+    }
+  }
+  &__title {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 128px;
+    line-height: 190px;
+  }
+  &__subtitle {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__btn-wrapper {
+    position: absolute;
+    top: 95%;
+    left: 95%;
+  }
+}
