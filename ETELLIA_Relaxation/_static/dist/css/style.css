@@ -533,7 +533,7 @@ a:hover img {
   height: 43px;
   width: 172px;
   text-align: center;
-  color: #fff;
+  color: rgb(255, 255, 255);
   background-color: rgb(153, 0, 0);
   border: solid 2px rgb(153, 0, 0);
   border-radius: 50px;
@@ -547,14 +547,11 @@ a:hover img {
 .c-button--large {
   display: inline-block;
   padding: 10px 100px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   background-color: rgb(153, 0, 0);
   border: solid 2px rgb(153, 0, 0);
   border-radius: 20px;
   text-decoration: none;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 23px;
 }
 
 .c-heading {

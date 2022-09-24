@@ -5,7 +5,7 @@
   height: 43px;
   width: 172px;
   text-align: center;
-  color: $color-base;
+  color: $c-main;
   background-color: $c-accent;
   border: solid 2px $c-accent;
   border-radius: 50px;
@@ -19,12 +19,9 @@
 .c-button--large {
   display: inline-block;
   padding: 10px 100px;
-  color: $color-base;
+  color: $c-main;
   background-color: $c-accent;
   border: solid 2px $c-accent;
   border-radius: 20px;
   text-decoration: none;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 23px;
 }
