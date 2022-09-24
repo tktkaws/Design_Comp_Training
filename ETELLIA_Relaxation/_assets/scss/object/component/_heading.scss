@@ -1,13 +1,14 @@
+@use "./../../foundation/color" as *;
+
 .c-heading {
   margin-top: 33px;
-  border-bottom: solid 1px red;
+  border-bottom: solid 1px $c-accent;
   display: flex;
   justify-content: start;
   align-items: center;
 
   &__title {
     font-size: 32px;
-    font-weight: 700;
     line-height: 46px;
     letter-spacing: 0em;
     text-align: left;
@@ -15,8 +16,6 @@
   }
   &__subtitle {
     font-size: 19.2px;
-    line-height: 28px;
-    font-weight: 700;
     line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
