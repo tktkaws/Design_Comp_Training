@@ -6,36 +6,25 @@
   width: 172px;
   text-align: center;
   color: $color-base;
-  background-color: $color-accent;
-  border: solid 2px $color-accent;
+  background-color: $c-accent;
+  border: solid 2px $c-accent;
   border-radius: 50px;
   text-decoration: none;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 23px;
-
-  &:hover {
-    color: $color-accent;
-    background-color: $color-base;
-  }
 }
 
 .c-button--large {
   display: inline-block;
   padding: 10px 100px;
   color: $color-base;
-  background-color: $color-accent;
-  border: solid 2px $color-accent;
+  background-color: $c-accent;
+  border: solid 2px $c-accent;
   border-radius: 20px;
   text-decoration: none;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 23px;
-
-  &:hover {
-    color: $color-accent;
-    background-color: $color-base;
-  }
 }

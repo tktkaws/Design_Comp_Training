@@ -1,16 +1,7 @@
 @use "./../foundation/color" as *;
-// $c-base: rgb(0, 0, 0);
-// $c-main: rgb(255, 255, 255);
-// $c-accent：: rgb(153, 0, 0);
 
 .l-header {
-  // position: sticky;
-  // top: 0;
-  // background-color: $color-black;
-  // z-index: 1;
-
-  &__black {
-    background-color: $c-base;
+  &__top {
     height: 77px;
   }
 
@@ -42,14 +33,10 @@
   &__btn-wrapper {
     margin-right: 27px;
     margin-top: 9px;
-    // margin-right: 28px;
-    // margin-top: 14px;
-    // margin-right: 26px;
-    // margin-top: 12px;
   }
 
-  &__nav {
-  }
+  // &__nav {
+  // }
 
   &__nav-lists {
     height: 49px;
