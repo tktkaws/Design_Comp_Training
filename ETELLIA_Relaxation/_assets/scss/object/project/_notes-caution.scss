@@ -3,9 +3,6 @@
 .p-notes-caution {
   margin-bottom: 42px;
   &__text {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 23px;
     margin-top: 16px;
   }
   &__list-title {
@@ -23,14 +20,14 @@
     }
   }
   &__span--red {
-    color: $color-accent;
+    color: $c-accent;
     margin-left: -5px;
   }
 
   &__text--red {
     font-size: 14px;
     line-height: 20px;
-    color: $color-accent;
+    color: $c-accent;
     margin-top: 6px;
     margin-left: 13px;
   }
@@ -38,27 +35,8 @@
   &__lists--mt13 {
     margin-top: 13px;
     margin-left: 12px;
-    li {
-      font-size: 16px;
-      line-height: 23px;
-    }
     li:last-child {
       margin-top: 5px;
     }
   }
-
-  // スタイル当たらない
-  // &__list {
-  //   font-size: 16px;
-  //   line-height: 23px;
-  //   margin-top: 1px;
-  //   margin-right: 1px;
-  //   margin-left: 1px;
-  //   margin-bottom: 1px;
-  // }
-  // &__list--red {
-  //   font-size: 14px;
-  //   line-height: 20px;
-  //   color: $color-accent;
-  // }
 }

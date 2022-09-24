@@ -390,6 +390,8 @@ body {
   color: rgb(255, 255, 255);
   font-family: "Noto Serif JP", serif;
   font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 23px;
   min-width: 350px;
   width: 900px;
   overflow-x: hidden;
@@ -433,8 +435,7 @@ a:hover img {
   box-sizing: border-box;
 }
 
-.l-header__black {
-  background-color: rgb(0, 0, 0);
+.l-header__top {
   height: 77px;
 }
 .l-header__wrapper {
@@ -479,28 +480,16 @@ a:hover img {
 }
 
 .l-footer {
-  background-color: #000000;
-  color: #fff;
   display: flex;
   justify-content: center;
   text-align: center;
   padding-top: 23px;
   padding-bottom: 23px;
-  border-top: 2px solid #ffffff;
-}
-.l-footer__content {
-  font-family: "Noto Serif JP";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 23px;
-  color: #ffffff;
+  border-top: 2px solid;
 }
 
 .l-fv {
   background-image: url(../img/ページトップ.svg);
-  background-position: center;
-  background-size: cover;
   height: 396px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -545,8 +534,8 @@ a:hover img {
   width: 172px;
   text-align: center;
   color: #fff;
-  background-color: #990000;
-  border: solid 2px #990000;
+  background-color: rgb(153, 0, 0);
+  border: solid 2px rgb(153, 0, 0);
   border-radius: 50px;
   text-decoration: none;
   font-style: normal;
@@ -554,26 +543,18 @@ a:hover img {
   font-size: 16px;
   line-height: 23px;
 }
-.c-button:hover {
-  color: #990000;
-  background-color: #fff;
-}
 
 .c-button--large {
   display: inline-block;
   padding: 10px 100px;
   color: #fff;
-  background-color: #990000;
-  border: solid 2px #990000;
+  background-color: rgb(153, 0, 0);
+  border: solid 2px rgb(153, 0, 0);
   border-radius: 20px;
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 23px;
-}
-.c-button--large:hover {
-  color: #990000;
-  background-color: #fff;
 }
 
 .c-heading {
@@ -603,8 +584,6 @@ a:hover img {
 
 .p-home-fv {
   background-image: url(../img/トップ.svg);
-  background-position: center;
-  background-size: cover;
   height: 396px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -628,25 +607,17 @@ a:hover img {
   z-index: 1;
 }
 .p-home-fv__title {
-  font-family: "Noto Serif JP";
-  font-style: normal;
   font-weight: 400;
   font-size: 48px;
-  color: #ffffff;
   line-height: 69px;
 }
 .p-home-fv__subtitle {
-  font-family: "Noto Serif JP";
-  font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 23px;
   color: #e4bc2e;
   margin-left: 39px;
 }
 
 .p-home-menu {
-  background-color: black;
   height: 350px;
   padding-top: 50px;
 }
@@ -660,8 +631,6 @@ a:hover img {
   align-items: center;
   width: 250px;
   height: 250px;
-  border: 1px solid #000000;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: relative;
   z-index: 0;
 }
@@ -686,10 +655,8 @@ a:hover img {
 }
 .p-home-menu__text {
   display: inline-block;
-  font-family: "Noto Serif JP";
-  font-weight: bold;
   font-size: 48px;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   z-index: 1;
 }
 
@@ -702,8 +669,6 @@ a:hover img {
   margin-top: 50px;
 }
 .p-home-cv__heading {
-  font-style: normal;
-  font-weight: 700;
   font-size: 48px;
   line-height: 69px;
   text-align: center;
@@ -712,10 +677,6 @@ a:hover img {
   width: 585px;
   margin: 0 auto;
   margin-top: 17px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 23px;
   text-align: center;
 }
 .p-home-cv__btn-wrapper {
@@ -735,20 +696,15 @@ a:hover img {
   margin-right: 43px;
 }
 .p-home-info__content {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 23px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid;
 }
 .p-home-info__content--text-large {
-  font-weight: 700;
   font-size: 24px;
   line-height: 34px;
 }
 .p-home-info__content--text-large--ml13 {
-  font-weight: 700;
   font-size: 24px;
   line-height: 34px;
   margin-left: 13px;
@@ -769,8 +725,6 @@ a:hover img {
 .p-salon-about__image {
   width: 250px;
   height: 250px;
-  border: 1px solid #000000;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .p-salon-about__text {
   margin-top: 12px;
@@ -779,13 +733,11 @@ a:hover img {
 .p-salon-about__text-content-top {
   text-align: center;
   margin-bottom: 10px;
-  line-height: 23px;
   margin-left: -21px;
 }
 .p-salon-about__text-content {
   text-align: center;
   margin-bottom: 10px;
-  line-height: 23px;
 }
 .p-salon-about__contents--reverse {
   display: flex;
@@ -812,14 +764,9 @@ a:hover img {
 }
 .p-salon-map__text {
   margin-top: 16px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 23px;
 }
 
 .p-menu-facial__text {
-  font-weight: 700;
   font-size: 19.2px;
   line-height: 28px;
   margin-top: 16px;
@@ -827,11 +774,10 @@ a:hover img {
 .p-menu-facial__price-list {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px dashed #ffffff;
+  border-bottom: 1px dashed;
   margin-top: 20px;
 }
 .p-menu-facial__title {
-  font-weight: 700;
   font-size: 24px;
   line-height: 34px;
 }
@@ -854,20 +800,17 @@ a:hover img {
   justify-content: flex-end;
 }
 .p-menu-facial__time {
-  font-weight: 700;
   font-size: 19.2px;
   line-height: 28px;
   text-align: right;
 }
 .p-menu-facial__price {
-  font-weight: 700;
   font-size: 19.2px;
   line-height: 28px;
   text-align: right;
   margin-left: 22px;
 }
 .p-menu-facial__price--high {
-  font-weight: 700;
   font-size: 19.2px;
   line-height: 28px;
   text-align: right;
@@ -880,13 +823,12 @@ a:hover img {
 }
 
 .p-menu-body__text {
-  font-weight: 700;
   font-size: 19.2px;
   line-height: 28px;
   margin-top: 16px;
 }
 .p-menu-body__price-list {
-  border-bottom: 1px dashed #ffffff;
+  border-bottom: 1px dashed;
 }
 .p-menu-body__main-wrapper {
   margin-top: 19px;
@@ -907,34 +849,26 @@ a:hover img {
 }
 .p-menu-body__course--red {
   padding: 5px 20px;
-  background: #990000;
+  background-color: rgb(153, 0, 0);
   width: 100px;
   height: 33px;
   display: inline-block;
 }
 .p-menu-body__course {
-  font-family: "Noto Serif JP";
-  font-style: normal;
-  font-weight: 700;
   font-size: 24px;
   line-height: 34px;
 }
 .p-menu-body__time {
-  font-weight: 700;
   font-size: 19.2px;
   line-height: 28px;
-  /* ボックスの高さと同一 */
   text-align: right;
 }
 .p-menu-body__price {
-  font-weight: 700;
   font-size: 19.2px;
   line-height: 28px;
-  /* ボックスの高さと同一 */
   text-align: right;
 }
 .p-menu-body__price--high {
-  font-weight: 700;
   font-size: 19.2px;
   line-height: 28px;
   text-align: right;
@@ -957,7 +891,6 @@ a:hover img {
   margin-top: 46px;
 }
 .p-menu-foot__text {
-  font-weight: 700;
   font-size: 19.2px;
   line-height: 28px;
   margin-top: 28px;
@@ -966,7 +899,7 @@ a:hover img {
 .p-menu-foot__price-list {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px dashed #ffffff;
+  border-bottom: 1px dashed;
   margin-top: 20px;
   padding-bottom: 12px;
 }
@@ -974,7 +907,6 @@ a:hover img {
   flex-basis: 50%;
 }
 .p-menu-foot__course {
-  font-weight: 700;
   font-size: 24px;
   line-height: 34px;
 }
@@ -999,17 +931,13 @@ a:hover img {
   margin-top: 4px;
 }
 .p-menu-foot__time {
-  font-weight: 700;
   font-size: 19.2px;
   line-height: 28px;
-  /* ボックスの高さと同一 */
   text-align: right;
 }
 .p-menu-foot__price {
-  font-weight: 700;
   font-size: 19.2px;
   line-height: 28px;
-  /* ボックスの高さと同一 */
   text-align: right;
 }
 .p-menu-foot__btn-wrapper {
@@ -1023,9 +951,6 @@ a:hover img {
   margin-bottom: 42px;
 }
 .p-notes-caution__text {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 23px;
   margin-top: 16px;
 }
 .p-notes-caution__list-title {
@@ -1043,23 +968,19 @@ a:hover img {
   line-height: 23px;
 }
 .p-notes-caution__span--red {
-  color: #990000;
+  color: rgb(153, 0, 0);
   margin-left: -5px;
 }
 .p-notes-caution__text--red {
   font-size: 14px;
   line-height: 20px;
-  color: #990000;
+  color: rgb(153, 0, 0);
   margin-top: 6px;
   margin-left: 13px;
 }
 .p-notes-caution__lists--mt13 {
   margin-top: 13px;
   margin-left: 12px;
-}
-.p-notes-caution__lists--mt13 li {
-  font-size: 16px;
-  line-height: 23px;
 }
 .p-notes-caution__lists--mt13 li:last-child {
   margin-top: 5px;

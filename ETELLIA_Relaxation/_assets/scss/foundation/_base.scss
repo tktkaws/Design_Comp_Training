@@ -11,8 +11,12 @@ html {
 body {
   background-color: $c-base;
   color: $c-main;
+
   font-family: $f-base;
   font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 23px;
+
   min-width: 350px;
   width: 900px;
   overflow-x: hidden;

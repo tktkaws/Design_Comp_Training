@@ -1,10 +1,8 @@
 .p-home-cv {
   margin-top: 50px;
-  &__text {
-  }
+  // &__text {
+  // }
   &__heading {
-    font-style: normal;
-    font-weight: 700;
     font-size: 48px;
     line-height: 69px;
     text-align: center;
@@ -13,11 +11,6 @@
     width: 585px;
     margin: 0 auto;
     margin-top: 17px;
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 23px;
     text-align: center;
   }
 

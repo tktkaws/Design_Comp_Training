@@ -1,14 +1,12 @@
+@use "./../../foundation/color" as *;
+
 .p-home-fv {
   background-image: url(../img/トップ.svg);
-  background-position: center;
-  background-size: cover;
   height: 396px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-
   position: relative;
-
   padding-top: 129px;
   padding-left: 275px;
   display: flex;
@@ -28,20 +26,13 @@
     z-index: 1;
   }
   &__title {
-    font-family: "Noto Serif JP";
-    font-style: normal;
     font-weight: 400;
     font-size: 48px;
-    color: #ffffff;
     line-height: 69px;
   }
   &__subtitle {
-    font-family: "Noto Serif JP";
-    font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
-    color: #e4bc2e;
+    color: $c-subtitle;
     margin-left: 39px;
   }
 }

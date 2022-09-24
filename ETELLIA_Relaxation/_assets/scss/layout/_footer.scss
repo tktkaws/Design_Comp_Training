@@ -1,23 +1,11 @@
-@use "./../foundation/color" as *;
-
 .l-footer {
-  background-color: $color-black;
-  color: $color-base;
-
   display: flex;
   justify-content: center;
   text-align: center;
   padding-top: 23px;
   padding-bottom: 23px;
+  border-top: 2px solid;
 
-  border-top: 2px solid #ffffff;
-
-  &__content {
-    font-family: "Noto Serif JP";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 23px;
-    color: #ffffff;
-  }
+  // &__content {
+  // }
 }
