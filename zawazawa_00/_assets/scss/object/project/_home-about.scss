@@ -1,0 +1,59 @@
+.p-home-about {
+  display: flex;
+  &__text-wrapper {
+    width: 45%;
+  }
+  &__title {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 128px;
+    line-height: 190px;
+  }
+  &__subtitle {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #ffffff;
+    background-color: black;
+  }
+  &__desc {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22.5px;
+    line-height: 31px;
+  }
+  &__image-wrapper {
+    display: flex;
+    width: 45%;
+  }
+  &__image-left {
+    width: 385px;
+    height: 572px;
+    margin-right: -200px;
+    margin-top: 200px;
+    z-index: 2;
+  }
+  &__image-right {
+    width: 385px;
+    height: 572px;
+  }
+  &__deco {
+    display: flex;
+    justify-content: center;
+    writing-mode: vertical-rl;
+
+    &::before {
+      content: "";
+      display: block;
+      background-color: black;
+      width: 1px;
+      height: 557px;
+
+      justify-self: center;
+    }
+  }
+}

@@ -16,14 +16,14 @@
 /*-------------------
 * component
 -------------------*/
-@use "./object/component/inner";
+@use "./object/component/wrapper";
 @use "./object/component/button";
-@use "./object/component/section";
 
 /*-------------------
   * project
   -------------------*/
 @use "./object/project/home-fv";
+@use "./object/project/home-about";
 
 /*-------------------
   * utility

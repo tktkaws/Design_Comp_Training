@@ -464,30 +464,15 @@ th {
   color: #fff;
 }
 
-.c-inner {
-  max-width: 1220px;
+.c-wrapper {
+  width: 1500px;
   margin: 0 auto;
-  padding: 10px 30px;
 }
 
 .c-button {
   background-color: black;
   color: white;
   padding: 3px 20px;
-}
-
-.c-section {
-  padding: 50px 0 90px;
-  background-color: #f6fff7;
-}
-.c-section:nth-of-type(odd) {
-  background-color: #fff;
-}
-.c-section__title {
-  text-align: center;
-  font-size: 2.8rem;
-  font-weight: bold;
-  margin-bottom: 38px;
 }
 
 .p-home-fv {
@@ -536,6 +521,64 @@ th {
   position: absolute;
   top: 95%;
   left: 95%;
+}
+
+.p-home-about {
+  display: flex;
+}
+.p-home-about__text-wrapper {
+  width: 45%;
+}
+.p-home-about__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 128px;
+  line-height: 190px;
+}
+.p-home-about__subtitle {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  color: #ffffff;
+  background-color: black;
+}
+.p-home-about__desc {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22.5px;
+  line-height: 31px;
+}
+.p-home-about__image-wrapper {
+  display: flex;
+  width: 45%;
+}
+.p-home-about__image-left {
+  width: 385px;
+  height: 572px;
+  margin-right: -200px;
+  margin-top: 200px;
+  z-index: 2;
+}
+.p-home-about__image-right {
+  width: 385px;
+  height: 572px;
+}
+.p-home-about__deco {
+  display: flex;
+  justify-content: center;
+  writing-mode: vertical-rl;
+}
+.p-home-about__deco::before {
+  content: "";
+  display: block;
+  background-color: black;
+  width: 1px;
+  height: 557px;
+  justify-self: center;
 }
 
 .u-inline-block {
