@@ -1,19 +1,46 @@
-@use "./../foundation/variable" as *;
+// @use "./../foundation/variable" as *;
+
+// .l-header {
+//   position: sticky;
+//   top: 0;
+//   background-color: $color-base;
+//   z-index: 1;
+
+//   &__content {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+
+//   &__logo {
+//     display: inline-block;
+//     max-width: 40%;
+//   }
+// }
 
 .l-header {
-  position: sticky;
-  top: 0;
-  background-color: $color-base;
-  z-index: 1;
-
-  &__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
+  height: 187px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   &__logo {
-    display: inline-block;
-    max-width: 40%;
+    width: 447px;
+    height: 59px;
+  }
+  &__gnav {
+  }
+  &__lists {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  &__list {
+  }
+  &__link {
   }
 }
+
+// todo
+// 画像が荒い
+// 文字を大文字に
+// 高さ指定？
