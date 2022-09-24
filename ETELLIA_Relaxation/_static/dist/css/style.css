@@ -489,7 +489,7 @@ a:hover img {
 }
 
 .l-fv {
-  background-image: url(../img/ページトップ.svg);
+  background-image: url(../img/ページトップ.png);
   height: 396px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -577,7 +577,7 @@ a:hover img {
 }
 
 .p-home-fv {
-  background-image: url(../img/トップ.svg);
+  background-image: url(../img/トップ.png);
   height: 396px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -639,13 +639,13 @@ a:hover img {
   z-index: 0;
 }
 .p-home-menu__list--salon {
-  background-image: url(../img/リンクsalon.svg);
+  background-image: url(../img/リンクsalon.png);
 }
 .p-home-menu__list--menu {
-  background-image: url(../img/リンクmenu.svg);
+  background-image: url(../img/リンクmenu.png);
 }
 .p-home-menu__list--notes {
-  background-image: url(../img/リンクnotes.svg);
+  background-image: url(../img/リンクnotes.png);
 }
 .p-home-menu__text {
   display: inline-block;
