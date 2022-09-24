@@ -1,24 +1,49 @@
+@use "./../../foundation/color" as *;
+// $c-base: rgb(0, 0, 0);
+// $c-main: rgb(255, 255, 255);
+// $c-accent：: rgb(153, 0, 0);
+
 .p-recruit-outline {
   &__table {
-    width: 90%;
+    // width: 743px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
+    margin-top: 44px;
   }
-  &__tbody {
-  }
+  // &__tbody {
+  // }
   &__tr {
-    padding: 10px;
+    height: 65.5px;
+    font-size: 18px;
   }
   &__th {
     border: solid 1px;
-    padding: 10px;
+    padding-top: 18px;
     text-align: center;
-    width: 35%;
+    width: 247px;
   }
   &__td {
     border: solid 1px;
-    padding: 10px;
+    padding-top: 18px;
     text-align: center;
-    width: 65%;
+    width: 493px;
+
+    &--text-small {
+      border: solid 1px;
+      padding-top: 18px;
+      text-align: center;
+      width: 493px;
+      font-size: 16px;
+      color: $c-main;
+      a {
+        color: $c-main;
+      }
+    }
+  }
+  &__text-right {
+    margin-left: 20px;
+    &--ml10 {
+      margin-left: 10px;
+    }
   }
 }
