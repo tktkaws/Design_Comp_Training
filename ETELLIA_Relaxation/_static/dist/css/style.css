@@ -710,6 +710,12 @@ a:hover img {
   width: 450px;
   height: 306px;
 }
+.p-home-info__letter-spacing {
+  letter-spacing: -1px;
+}
+.p-home-info__text--ml13 {
+  margin-left: 13px;
+}
 
 .p-salon-about__contents {
   display: flex;
