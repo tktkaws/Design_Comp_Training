@@ -10,17 +10,21 @@
   // }
   &__tr {
     height: 65.5px;
-    font-size: 18px;
+    // font-size: 18px;
   }
   &__th {
     border: solid 1px;
-    padding-top: 18px;
+    padding-top: 21px;
+    letter-spacing: 2px;
     text-align: center;
+    letter-spacing: 0px;
+
     width: 247px;
   }
   &__td {
     border: solid 1px;
-    padding-top: 18px;
+    padding-top: 21px;
+    letter-spacing: 2px;
     text-align: center;
     width: 493px;
 
@@ -29,17 +33,24 @@
       padding-top: 18px;
       text-align: center;
       width: 493px;
-      font-size: 16px;
       color: $c-main;
       a {
         color: $c-main;
+        text-decoration: underline;
       }
     }
   }
   &__text-right {
-    margin-left: 20px;
+    margin-left: 6px;
     &--ml10 {
       margin-left: 10px;
     }
+  }
+
+  &__text-half {
+    letter-spacing: 0px;
+    transform: scale(0.75, 1);
+    display: inline-block;
+    margin-left: -10px;
   }
 }

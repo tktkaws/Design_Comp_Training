@@ -32,24 +32,26 @@
 
   &__courses {
     display: flex;
-    justify-content: flex-end;
   }
   &__time {
     font-size: 19.2px;
     line-height: 28px;
     text-align: right;
+    width: 80px;
   }
   &__price {
     font-size: 19.2px;
     line-height: 28px;
     text-align: right;
     margin-left: 22px;
+    width: 70px;
 
     &--high {
       font-size: 19.2px;
       line-height: 28px;
       text-align: right;
       margin-left: 11px;
+      width: 80px;
     }
   }
 
