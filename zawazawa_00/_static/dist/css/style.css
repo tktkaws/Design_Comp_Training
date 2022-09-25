@@ -605,12 +605,12 @@ th {
 .p-home-news {
   position: relative;
 }
-.p-home-news__main-contents {
+.p-home-news__main-contents-wrapper {
   display: flex;
   justify-content: space-evenly;
   height: 400px;
 }
-.p-home-news__main-contents::before {
+.p-home-news__main-contents-wrapper::before {
   position: absolute;
   content: "journal";
   display: block;
@@ -666,6 +666,59 @@ th {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.p-home-product__main-contents-wrapper {
+  display: flex;
+}
+.p-home-product__deco {
+  display: flex;
+  justify-content: center;
+  writing-mode: vertical-rl;
+}
+.p-home-product__deco::before {
+  content: "";
+  display: block;
+  background-color: black;
+  width: 1px;
+  height: 557px;
+  justify-self: center;
+}
+.p-home-product__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 128px;
+  line-height: 190px;
+}
+.p-home-product__desc {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22.5px;
+  line-height: 31px;
+}
+.p-home-product__image-left {
+  position: relative;
+  width: 634px;
+  height: 950px;
+}
+.p-home-product__image-left::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 634px;
+  height: 950px;
+  background: #f1e8ff;
+  top: 0;
+  left: 10%;
+  z-index: -1;
+}
+.p-home-product__btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -200px;
+  z-index: 2;
 }
 
 .u-inline-block {

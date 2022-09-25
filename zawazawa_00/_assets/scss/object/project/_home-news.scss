@@ -1,0 +1,81 @@
+.p-home-news {
+  position: relative;
+  &__main-contents-wrapper {
+    &::before {
+      position: absolute;
+      content: "journal";
+      display: block;
+      font-family: "Oswald";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 400px;
+      line-height: 593px;
+      color: #f4f4f4;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+
+    display: flex;
+    justify-content: space-evenly;
+    height: 400px;
+  }
+
+  &__card-wrapper {
+    display: flex;
+
+    gap: 50px;
+    margin-top: 100px;
+  }
+  &__card {
+  }
+  &__card-image {
+    width: 238px;
+    height: 199px;
+
+    // &::after {
+    //   position: absolute;
+    //   top: 10%;
+    //   left: 10%;
+    //   content: "";
+    //   width: 238px;
+    //   height: 199px;
+    //   background-color: chocolate;
+    // }
+  }
+  &__card-title {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 50px;
+    border-bottom: 1px solid;
+  }
+  &__card-subtitle {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  &__title {
+    display: flex;
+    writing-mode: vertical-rl;
+
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 95px;
+    &::after {
+      content: "▶";
+      display: block;
+      transform: rotate(90deg);
+    }
+  }
+  &__btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

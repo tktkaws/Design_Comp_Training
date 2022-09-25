@@ -1,0 +1,67 @@
+.p-home-product {
+  &__main-contents-wrapper {
+    display: flex;
+  }
+  &__deco {
+    display: flex;
+    justify-content: center;
+    writing-mode: vertical-rl;
+
+    &::before {
+      content: "";
+      display: block;
+      background-color: black;
+      width: 1px;
+      height: 557px;
+
+      justify-self: center;
+    }
+  }
+  &__text-wrapper {
+  }
+  &__title {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 128px;
+    line-height: 190px;
+  }
+  &__desc {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22.5px;
+    line-height: 31px;
+  }
+  &__image-wrapper {
+  }
+  &__image-left {
+    position: relative;
+    width: 634px;
+    height: 950px;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 634px;
+      height: 950px;
+      background: #f1e8ff;
+      top: 0;
+      left: 10%;
+      z-index: -1;
+    }
+  }
+  //   after要素で
+  //   &__image-right {
+  //     width: 167px;
+  //     height: 950px;
+
+  //     background: #f1e8ff;
+  //   }
+  &__btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: -200px;
+    z-index: 2;
+  }
+}
