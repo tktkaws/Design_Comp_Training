@@ -12,6 +12,7 @@ body {
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   min-width: 350px;
   width: 100%;
+  margin: 0 auto;
   overflow-x: hidden;
 }
 
@@ -719,6 +720,46 @@ th {
   justify-content: center;
   margin-top: -200px;
   z-index: 2;
+}
+
+.p-home-category {
+  margin-top: 200px;
+  display: flex;
+}
+.p-home-category__link {
+  width: 370px;
+}
+.p-home-category__card {
+  display: flex;
+  flex-direction: column;
+}
+.p-home-category__card--reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.p-home-category__card-image {
+  width: 370px;
+  height: 593px;
+}
+.p-home-category__card-text {
+  text-align: center;
+}
+.p-home-category__card-title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 95px;
+  border-bottom: 1px solid #000;
+  width: 80%;
+  margin: 0 auto;
+}
+.p-home-category__card-subtitle {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
 }
 
 .u-inline-block {
