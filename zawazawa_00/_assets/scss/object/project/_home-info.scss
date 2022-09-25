@@ -1,0 +1,56 @@
+.p-home-info {
+  margin-top: 200px;
+  display: flex;
+  gap: 100px;
+  &__aside-left {
+    width: 369px;
+    background-color: black;
+  }
+
+  &__deco {
+    display: flex;
+    justify-content: center;
+    writing-mode: vertical-rl;
+    color: white;
+
+    &::before {
+      content: "";
+      display: block;
+      background-color: white;
+      width: 1px;
+      height: 557px;
+
+      justify-self: center;
+    }
+  }
+
+  &__main-wrapper {
+    width: 684px;
+  }
+  &__title {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 128px;
+    line-height: 190px;
+  }
+  &__desc {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  &__map {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  &__aside-right {
+    width: 500px;
+  }
+  &__image {
+    margin-top: 100px;
+    width: 434px;
+    height: 652px;
+  }
+}

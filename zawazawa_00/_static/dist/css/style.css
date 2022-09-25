@@ -448,22 +448,9 @@ th {
   gap: 10px;
 }
 .l-footer {
-  background-color: #333;
-  color: #fff;
-}
-.l-footer__content {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 30px 0;
-}
-.l-footer__lists {
-  display: flex;
-  gap: 10px;
-  padding: 0 0 30px;
-}
-.l-footer__lists a {
-  color: #fff;
+  justify-content: flex-end;
+  margin-top: -100px;
 }
 
 .c-wrapper {
@@ -760,6 +747,59 @@ th {
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
+}
+
+.p-home-info {
+  margin-top: 200px;
+  display: flex;
+  gap: 100px;
+}
+.p-home-info__aside-left {
+  width: 369px;
+  background-color: black;
+}
+.p-home-info__deco {
+  display: flex;
+  justify-content: center;
+  writing-mode: vertical-rl;
+  color: white;
+}
+.p-home-info__deco::before {
+  content: "";
+  display: block;
+  background-color: white;
+  width: 1px;
+  height: 557px;
+  justify-self: center;
+}
+.p-home-info__main-wrapper {
+  width: 684px;
+}
+.p-home-info__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 128px;
+  line-height: 190px;
+}
+.p-home-info__desc {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+.p-home-info__map {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.p-home-info__aside-right {
+  width: 500px;
+}
+.p-home-info__image {
+  margin-top: 100px;
+  width: 434px;
+  height: 652px;
 }
 
 .u-inline-block {
