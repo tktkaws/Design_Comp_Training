@@ -34,54 +34,399 @@
     </header>
     <section class="p-home-fv">
       <div class="p-home-fv__left-container">
-        <h2 class="p-home-fv__contents-title">
-          works
-        </h2>
-        <div class="p-home-fv__contents-wrapper">
-          <figure class="p-home-fv__contents-image">
-            contents1
-          </figure>
-          <figure class="p-home-fv__contents-image">
-            contents2
-          </figure>
-          <figure class="p-home-fv__contents-image">
-            contents3
-          </figure>
+        <div class="p-single__image-container">
+          <figure class="p-single__mobile-image"></figure>
+          <figure class="p-single__pc-image"></figure>
         </div>
         <h2 class="p-home-fv__contents-title">
-          blog
+          point
         </h2>
         <div class="p-home-fv__contents-wrapper">
-          <figure class="p-home-fv__contents-image">
-            contents1
-          </figure>
-          <figure class="p-home-fv__contents-image">
-            contents2
-          </figure>
-          <figure class="p-home-fv__contents-image">
-            contents3
-          </figure>
-        </div>
-        <h2 class="p-home-fv__contents-title">
-          other
-        </h2>
-        <div class="p-home-fv__contents-wrapper">
-          <figure class="p-home-fv__contents-image">
-            contents1
-          </figure>
-          <figure class="p-home-fv__contents-image">
-            contents2
-          </figure>
-          <figure class="p-home-fv__contents-image">
-            contents3
-          </figure>
+          <button class="btn" data-micromodal-trigger="modal-1">
+            <figure class="p-home-fv__contents-image">
+              point1
+            </figure>
+          </button>
+          <button class="btn" data-micromodal-trigger="modal-2">
+            <figure class="p-home-fv__contents-image">
+              point2
+            </figure>
+          </button>
+          <button class="btn" data-micromodal-trigger="modal-3">
+            <figure class="p-home-fv__contents-image">
+              point3
+            </figure>
+          </button>
+          <button class="btn" data-micromodal-trigger="modal-4">
+            <figure class="p-home-fv__contents-image">
+              point4
+            </figure>
+          </button>
+          <button class="btn" data-micromodal-trigger="modal-5">
+            <figure class="p-home-fv__contents-image">
+              point5
+            </figure>
+          </button>
+          <button class="btn" data-micromodal-trigger="modal-6">
+            <figure class="p-home-fv__contents-image">
+              point6
+            </figure>
+          </button>
+          <!-- <button class="btn" data-micromodal-trigger="modal-7">
+            <figure class="p-home-fv__contents-image">
+              point7
+            </figure>
+          </button>
+          <button class="btn" data-micromodal-trigger="modal-8">
+            <figure class="p-home-fv__contents-image">
+              point8
+            </figure>
+          </button>
+          <button class="btn" data-micromodal-trigger="modal-9">
+            <figure class="p-home-fv__contents-image">
+              point9
+            </figure>
+          </button> -->
         </div>
       </div>
-      <div class="p-home-fv__right-container">
-        <div class="p-home-fv__title-container">
-          <h1 class="p-home-fv__title">タカハシタカユキのポートフォリオ</h1>
+
+      <!-- right -->
+      <div class="p-single__right-container">
+        <div class="p-single-title-container">
+          <h1 class="p-single__title">ポートフォリオ01</h1>
+          <h1 class="p-single__title">wordpress</h1>
+        </div>
+
+        <p class="p-single__desc">
+          url:aaaaaaaaaaaaaaaaaaa
+          <br />
+          pass:aaaaaaaaaaaaaaaaaaa
+        </p>
+        <!-- <div class="p-single__image-container">
+          <figure class="p-single__mobile-image"></figure>
+          <figure class="p-single__pc-image"></figure>
+        </div> -->
+      </div>
+
+      <!-- modal -->
+      <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div
+            class="modal__container"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-1-title"
+          >
+            <main class="modal__content" id="modal-1-content">
+              <p>
+                modal1の画面
+              </p>
+            </main>
+            <footer class="modal__footer">
+              <button
+                class="modal__btn modal__btn-secondary"
+                data-micromodal-trigger="modal-9"
+                data-micromodal-close
+              >
+                prev
+              </button>
+              <button
+                class="modal__btn modal__btn-primary"
+                data-micromodal-trigger="modal-2"
+                data-micromodal-close
+              >
+                next
+              </button>
+            </footer>
+          </div>
         </div>
       </div>
+      <!-- modal -->
+
+      <!-- modal -->
+      <div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div
+            class="modal__container"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-1-title"
+          >
+            <main class="modal__content" id="modal-2-content">
+              <p>
+                modal2の画面
+              </p>
+            </main>
+            <footer class="modal__footer">
+              <button
+                class="modal__btn modal__btn-secondary"
+                data-micromodal-trigger="modal-1"
+                data-micromodal-close
+              >
+                prev
+              </button>
+              <button
+                class="modal__btn modal__btn-primary"
+                data-micromodal-trigger="modal-3"
+                data-micromodal-close
+              >
+                next
+              </button>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <!-- modal -->
+
+      <!-- modal -->
+      <div class="modal micromodal-slide" id="modal-3" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div
+            class="modal__container"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-1-title"
+          >
+            <main class="modal__content" id="modal-3-content">
+              <p>
+                modal3の画面
+              </p>
+            </main>
+            <footer class="modal__footer">
+              <button
+                class="modal__btn modal__btn-secondary"
+                data-micromodal-trigger="modal-2"
+                data-micromodal-close
+              >
+                prev
+              </button>
+              <button
+                class="modal__btn modal__btn-primary"
+                data-micromodal-trigger="modal-4"
+                data-micromodal-close
+              >
+                next
+              </button>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <!-- modal -->
+
+      <!-- modal -->
+      <div class="modal micromodal-slide" id="modal-4" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div
+            class="modal__container"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-1-title"
+          >
+            <main class="modal__content" id="modal-4-content">
+              <p>
+                modal4の画面
+              </p>
+            </main>
+            <footer class="modal__footer">
+              <button
+                class="modal__btn modal__btn-secondary"
+                data-micromodal-trigger="modal-3"
+                data-micromodal-close
+              >
+                prev
+              </button>
+              <button
+                class="modal__btn modal__btn-primary"
+                data-micromodal-trigger="modal-5"
+                data-micromodal-close
+              >
+                next
+              </button>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <!-- modal -->
+
+      <!-- modal -->
+      <div class="modal micromodal-slide" id="modal-5" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div
+            class="modal__container"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-1-title"
+          >
+            <main class="modal__content" id="modal-5-content">
+              <p>
+                modal5の画面
+              </p>
+            </main>
+            <footer class="modal__footer">
+              <button
+                class="modal__btn modal__btn-secondary"
+                data-micromodal-trigger="modal-4"
+                data-micromodal-close
+              >
+                prev
+              </button>
+              <button
+                class="modal__btn modal__btn-primary"
+                data-micromodal-trigger="modal-6"
+                data-micromodal-close
+              >
+                next
+              </button>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <!-- modal -->
+
+      <!-- modal -->
+      <div class="modal micromodal-slide" id="modal-6" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div
+            class="modal__container"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-1-title"
+          >
+            <main class="modal__content" id="modal-6-content">
+              <p>
+                modal6の画面
+              </p>
+            </main>
+            <footer class="modal__footer">
+              <button
+                class="modal__btn modal__btn-secondary"
+                data-micromodal-trigger="modal-5"
+                data-micromodal-close
+              >
+                prev
+              </button>
+              <button
+                class="modal__btn modal__btn-primary"
+                data-micromodal-trigger="modal-7"
+                data-micromodal-close
+              >
+                next
+              </button>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <!-- modal -->
+
+      <!-- modal -->
+      <div class="modal micromodal-slide" id="modal-7" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div
+            class="modal__container"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-1-title"
+          >
+            <main class="modal__content" id="modal-7-content">
+              <p>
+                modal7の画面
+              </p>
+            </main>
+            <footer class="modal__footer">
+              <button
+                class="modal__btn modal__btn-secondary"
+                data-micromodal-trigger="modal-6"
+                data-micromodal-close
+              >
+                prev
+              </button>
+              <button
+                class="modal__btn modal__btn-primary"
+                data-micromodal-trigger="modal-8"
+                data-micromodal-close
+              >
+                next
+              </button>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <!-- modal -->
+
+      <!-- modal -->
+      <div class="modal micromodal-slide" id="modal-8" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div
+            class="modal__container"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-1-title"
+          >
+            <main class="modal__content" id="modal-8-content">
+              <p>
+                modal8の画面
+              </p>
+            </main>
+            <footer class="modal__footer">
+              <button
+                class="modal__btn modal__btn-secondary"
+                data-micromodal-trigger="modal-7"
+                data-micromodal-close
+              >
+                prev
+              </button>
+              <button
+                class="modal__btn modal__btn-primary"
+                data-micromodal-trigger="modal-9"
+                data-micromodal-close
+              >
+                next
+              </button>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <!-- modal -->
+
+      <!-- modal -->
+      <div class="modal micromodal-slide" id="modal-9" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div
+            class="modal__container"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-1-title"
+          >
+            <main class="modal__content" id="modal-8-content">
+              <p>
+                modal9の画面
+              </p>
+            </main>
+            <footer class="modal__footer">
+              <button
+                class="modal__btn modal__btn-secondary"
+                data-micromodal-trigger="modal-8"
+                data-micromodal-close
+              >
+                prev
+              </button>
+              <button
+                class="modal__btn modal__btn-primary"
+                data-micromodal-trigger="modal-1"
+                data-micromodal-close
+              >
+                next
+              </button>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <!-- modal -->
     </section>
+    <script
+      script
+      src="https://unpkg.com/micromodal/dist/micromodal.min.js"
+    ></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
