@@ -144,7 +144,7 @@ exports.imagemin = imagemin;
 //----------------------------------------------------------------------
 // 環境構築
 // cd \_gulp
-// npm init -y
+//
 // npm i gulp gulp-dart-sass gulp-plumber gulp-notify browser-sync
 // npm i -D gulp-imagemin@7.1.0 imagemin-mozjpeg@9.0.0 imagemin-pngquant gulp-changed
 
