@@ -1,0 +1,27 @@
+@use "./../foundation/variable" as *;
+
+.l-header {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw;
+
+  &__nav {
+  }
+  &__lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40vw;
+  }
+  &__list {
+  }
+
+  &__logo {
+    display: inline-block;
+    max-width: 40%;
+  }
+}
